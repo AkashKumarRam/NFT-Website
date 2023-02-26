@@ -1,0 +1,59 @@
+.hero-images {
+  display: flex;
+  max-width: 600px;
+  max-height: 100vh;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.marquee-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.marquee {
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.marquee-up img {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  animation: marquee-row-1 50s linear infinite;
+ 
+}
+
+.marquee-down img {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  animation: marquee-row-2 50s linear infinite;
+ 
+}
+
+
+/* Marquee effect styles */
+
+@keyframes marquee-row-1 {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-1000%);
+  }
+}
+
+@keyframes marquee-row-2 {
+  from {
+    transform: translateY(-1000%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+

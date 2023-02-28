@@ -5,10 +5,12 @@ import SingleKeyPoints from './SingleKeyPoints';
 const KeyPoints = () => {
   return (
     <div className='mt-24 content-center'>
-        <div className='ml-96'>
-            <h2 className='ml-[120px] text-5xl font-bold'>How it works?</h2>
-            <p className='mt-4 ml-8 text-2xl'>Leverage on No-Code Deployment and effortless APIs</p>
-            <p className='ml-24 text-xl'>your most junior developer can implement.</p>
+        <div className='flex flex-col justify-center items-center'>
+            <h2 className=' text-5xl font-bold'>How it works?</h2>
+           <div className='flex flex-col items-center justify-center'>
+           <p className='mt-4 text-2xl'>Leverage on No-Code Deployment and effortless APIs</p>
+            <p className=' text-xl'>your most junior developer can implement.</p>
+           </div>
         </div>
         <div>
            <SingleKeyPoints/>

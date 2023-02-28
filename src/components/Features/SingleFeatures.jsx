@@ -6,13 +6,13 @@ import Settings from "../../images/Settings.png";
 
 const SingleFeatures = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-between ml-20 mr-20">
-      <div className="w-[550px] h-[270px] bg-cyan-50 rounded-md mt-20">
-        <div className="flex items-center gap-5">
-          <img className="h-32 mt-10 ml-10" src={Flame} alt="Flame" />
+    <div className="flex flex-row flex-wrap justify-between ml-24 mr-28">
+      <div className="w-[550px] h-[250px] bg-[#F2F9FF] rounded-md mt-20">
+        <div className="flex items-center gap-4">
+          <img className="h-14 mt-10 ml-10" src={Flame} alt="Flame" />
           <h2 className="text-3xl font-body mt-10">Boost Engagement</h2>
         </div>
-        <div className="ml-10 mt-4">
+        <div className="ml-10 mt-8">
           <p>
             Make users feel they are important to your brand by rewarding
             <br /> limited edition branded digital collectible and build a
@@ -22,9 +22,9 @@ const SingleFeatures = () => {
         </div>
       </div>
 
-      <div className="w-[550px] h-[270px] bg-cyan-50 rounded-md mt-20">
-        <div className="flex items-center gap-5">
-          <img className="h-32 mt-10 ml-10" src={Dollar} alt="Flame" />
+      <div className="w-[550px] h-[250px] bg-[#F2F9FF] rounded-md mt-20">
+        <div className="flex items-center gap-4">
+          <img className="h-14 mt-10 ml-10" src={Dollar} alt="Flame" />
           <h2 className="text-3xl font-body mt-10">Save Cost</h2>
         </div>
         <div className="ml-10 mt-5">
@@ -38,9 +38,9 @@ const SingleFeatures = () => {
         </div>
       </div>
 
-      <div className="w-[550px] h-[270px] bg-cyan-50 rounded-md mt-20">
+      <div className="w-[550px] h-[250px] bg-[#F2F9FF]  rounded-md mt-10">
         <div className="flex items-center gap-5">
-          <img className="h-32 mt-10 ml-10" src={Chart} alt="Flame" />
+          <img className="h-14 mt-10 ml-10" src={Chart} alt="Flame" />
           <h2 className="text-3xl font-body mt-10">Boost Engagement</h2>
         </div>
         <div className="ml-10 mt-5">
@@ -53,9 +53,9 @@ const SingleFeatures = () => {
         </div>
       </div>
 
-      <div className="w-[550px] h-[270px] bg-cyan-50 rounded-md mt-20">
+      <div className="w-[550px] h-[250px] bg-[#F2F9FF]  rounded-md mt-10">
         <div className="flex items-center gap-5">
-          <img className="h-32 mt-10 ml-10" src={Settings} alt="Flame" />
+          <img className="h-14 mt-10 ml-10" src={Settings} alt="Flame" />
           <h2 className="text-3xl font-body mt-10">Automate Process</h2>
         </div>
         <div className="ml-10 mt-5">

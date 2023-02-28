@@ -3,7 +3,7 @@ import BlueButton from "../../images/BlueButton.png";
 
 const HeaderLeft = () => {
   return (
-    <div className='mt-20 ml-20'>
+    <div className='mt-28 ml-24'>
        <h2 className='font-header text-indigo-700 text-3xl'>NFT Life-Cycle Management Platform</h2>
        <h1 className='font-body text-6xl'>Use NFT-Driven Customer <br />Engagement - at scale</h1> 
        <p className='font-hero text-indigo-600 mt-4 text-lg'>Leverage NFTs to transform customer engagement and <br /> establish a powerful community-driven brand presence with <br /> Hexatick's comprehensive NFT management solution.</p>

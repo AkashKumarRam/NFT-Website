@@ -8,7 +8,9 @@ module.exports = {
       fontFamily: {
         body: ['Roboto'],
         header: ['Red Hat Display'],
-        hero: ['Red Hat Mono']
+        hero: ['Red Hat Mono'],
+        settings: ['Noto Sans'],
+        poppins: ['Poppins']
       },
       fontSize: {
         'credit': '0.875rem',

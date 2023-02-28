@@ -21,10 +21,10 @@ const LeftBanner = () => {
   return (
     <div className="ml-40">
       <div className="">
-        <h2 className="text-3xl font-body">It can be a</h2>
+        <h2 className="text-4xl font-body">It can be a</h2>
         <h1 className="font-body text-5xl mt-1 text-blue-600">{BoxImage[index].title}</h1>
         <img
-          className="h-32 mt-4"
+          className="h-40 mt-4"
           src={BoxImage[index].image}
           alt={BoxImage[index].title}
         />

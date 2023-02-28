@@ -13,7 +13,7 @@ const LeftBanner = () => {
         Math.random() * (BoxImage.length - 1) + 0
       );
       setIndex(randomNumber);
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -21,8 +21,8 @@ const LeftBanner = () => {
   return (
     <div className="ml-40">
       <div className="">
-        <h2 className="text-2xl font-body">It can be a</h2>
-        <h1 className="font-body text-4xl mt-2 text-blue-600">{BoxImage[index].title}</h1>
+        <h2 className="text-3xl font-body">It can be a</h2>
+        <h1 className="font-body text-5xl mt-1 text-blue-600">{BoxImage[index].title}</h1>
         <img
           className="h-32 mt-4"
           src={BoxImage[index].image}

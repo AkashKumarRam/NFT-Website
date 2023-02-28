@@ -1,5 +1,8 @@
+import BigBrands from "./components/BigBrands/BigBrands";
 import MainBanner from "./components/Details/MainBanner";
+import Features from "./components/Features/Features";
 import Header from "./components/Header/Header";
+import KeyPoints from "./components/KeyPoints/KeyPoints";
 import NavBar from "./components/NavBar/NavBar";
 import TrustedPartners from "./components/TrustedPartners/TrustedPartners";
 
@@ -10,6 +13,9 @@ function App() {
       <Header />
       <TrustedPartners />
       <MainBanner/>
+      <BigBrands/>
+      <Features/>
+      <KeyPoints/>
     </div>
   );
 }

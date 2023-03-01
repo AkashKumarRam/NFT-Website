@@ -5,7 +5,7 @@ import Mask from "../../images/Mask group.png";
 
 const BrandDetails = () => {
   return (
-   <div className='mt-32 w-full flex items-center justify-center p-5'>
+   <div className='mt-28 w-full flex items-center justify-center p-5'>
      <div className='flex flex-row space-x-12 bg-[#F2F9FF] items-center justify-between h-[20rem] w-[64.4rem]'>
        <div className='ml-10'>
        <div className='flex- felx-col space-y-4'>

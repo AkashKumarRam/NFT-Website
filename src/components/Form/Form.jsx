@@ -54,7 +54,7 @@ const Form = () => {
               />
 
               <span className="text-sm font-poppins mt-5 text-[#35457F]">
-                I agree that braintree may contact me at the email address or
+                I agree that hexatick may contact me at the email address or
                 phone number above.
               </span>
             </label>

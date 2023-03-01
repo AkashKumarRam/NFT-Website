@@ -22,12 +22,12 @@ const Footer = () => {
       </div>
       <div className="space-y-4 mt-16">
         <h2 className="font-poppins text-lg font-bold">Get in touch</h2>
-        <p className="font-poppins">helloupay@email.com</p>
+        <p className="font-poppins">contact@hexatick.com</p>
         <p className="font-poppins">734 Broadway, Floor 5 <br/> New York, NY 10003</p>
       </div>
       <div className="mt-16">
         <h2 className="font-poppins text-lg font-bold mb-4">Jump To</h2>
-        <ul className="font-poppins cursor-pointer">
+        <ul className="font-poppins cursor-pointer space-y-1">
           <li>Home</li>
           <li>UseCases</li>
           <li>Pricing</li>

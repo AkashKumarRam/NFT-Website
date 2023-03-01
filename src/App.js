@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Testimonial from "./components/Testimonials/Testimonial";
 import TrustedPartners from "./components/TrustedPartners/TrustedPartners";
 import Form from "./components/Form/Form";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Testimonial/>
       <BrandDetails/>
       <Form/>
+      <Footer/>
     </div>
   );
 }

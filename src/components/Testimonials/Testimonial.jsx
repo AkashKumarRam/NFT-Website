@@ -7,7 +7,7 @@ import Avatar from "../../images/Avatar.png";
 const Testimonial = () => {
   return (
     <div className="flex flex-col items-center justify-center space-y-10 mt-14 p-4">
-      <h2 className="text-4xl text-black font-body font-bold p-4">
+      <h2 className="text-4xl text-black font-settings p-4">
         Satisfied Customers
       </h2>
       <div className="flex flex-row space-x-8 items-center justify-between">

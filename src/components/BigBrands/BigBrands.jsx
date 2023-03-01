@@ -25,7 +25,7 @@ const BigBrands = () => {
 
 
   return (
-    <div className='mt-40 flex items-center p-2 justify-between'>
+    <div className='mt-40 flex items-center  justify-between'>
       <div className='flex items-center justify-center spac leading-10 p-20 bg-[#2F3FD4] w-1/2  rounded-r-3xl rounded-br-3xl'>
         <h2 className='text-5xl font-body text-white'>Big brands are <br/> already using NFTs</h2>
       </div>

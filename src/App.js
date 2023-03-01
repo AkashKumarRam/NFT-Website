@@ -3,8 +3,11 @@ import MainBanner from "./components/Details/MainBanner";
 import Features from "./components/Features/Features";
 import Header from "./components/Header/Header";
 import KeyPoints from "./components/KeyPoints/KeyPoints";
+import BrandDetails from "./components/MakeYourBrand/BrandDetails";
 import NavBar from "./components/NavBar/NavBar";
+import Testimonial from "./components/Testimonials/Testimonial";
 import TrustedPartners from "./components/TrustedPartners/TrustedPartners";
+import Form from "./components/Form/Form";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
       <BigBrands/>
       <Features/>
       <KeyPoints/>
+      <Testimonial/>
+      <BrandDetails/>
+      <Form/>
     </div>
   );
 }

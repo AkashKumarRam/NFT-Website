@@ -27,7 +27,7 @@ const SingleKeyPoints = () => {
            <div className='flex flex-col items-center justify-center'>
            <h3 className='font-header text-2xl mt-5'>Paste in your code</h3>
             <p className='text-lg mt-2'>Call APIs from your business logics to </p>
-            <p className=' text-md'>distribute NFTs</p>
+            <p className=' text-lg'>distribute NFTs</p>
            </div>
         </div>
         

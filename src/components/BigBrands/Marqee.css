@@ -1,0 +1,14 @@
+.marquee-container {
+  display: flex;
+  flex-direction: row;
+  animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-1000%);
+  }
+}

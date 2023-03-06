@@ -1,0 +1,86 @@
+@media only screen and (max-width: 640px) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 50px;
+    row-gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nft-text {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: full;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-text {
+    font-size: 32px;
+    width: full;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .sub-text {
+    /* font-size: 20px;
+        font-weight:400;
+        text-align: center;    */
+            
+    visibility: hidden;
+    position: relative; 
+  } 
+}
+
+@media only screen and (max-width: 640px) {
+  .sub-text::before {
+    visibility: visible;
+    position: absolute;
+
+    /* display: none; */
+    content: "Leverage NFTs to transform customer engagement and establish a powerful community-driven brand presence";
+    font-style: poppins;
+    margin-top: -1rem;
+    font-size: 0.9rem;
+    margin-left: 2.8rem;
+    font-weight: bold;
+  
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .try-for-free {
+    align-items: center;
+    height: 60px;
+    width: 180px;
+    margin-top: -2rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .demo {
+    align-items: center;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .credit {
+    margin-top: 4px;
+  }
+}

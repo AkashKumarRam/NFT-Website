@@ -7,7 +7,7 @@ import Avatar from "../../images/Avatar.png";
 const Testimonial = () => {
   return (
     <div className="flex flex-col items-center justify-center space-y-10 mt-14 p-4">
-      <h2 className="text-4xl text-black font-settings p-4">
+      <h2 className="text-4xl text-black font-settings p-4 max-sm:text-3xl">
         Satisfied Customers
       </h2>
       <div className="flex flex-row space-x-8 items-center justify-between">
@@ -32,7 +32,7 @@ const Testimonial = () => {
         <div className="flex flex-col space-y-6 bg-[#F2F9FF] p-5  w-80 min-h-[15rem]">
           <img src={Stars} alt="review star" className="w-24" />
           <p className="text-sm">
-          "Hexatick is highly recommended.! Our brand's engagement strategy.
+            "Hexatick is highly recommended.! Our brand's engagement strategy.
             The integration process was seamless, and the resulting impact on
             user engagement was incredible."
           </p>

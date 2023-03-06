@@ -1,14 +1,31 @@
-import React from 'react';
+import React from "react";
 import NftBranding from "../../images/NFT Branding.png";
 import YtButton from "../../images/YouTube Button.png";
+import Adds from "../../images/Adds.png";
 
 const RightBanner = () => {
   return (
     <div>
-        <img className='mr-40 h-[480px] mt-[-10px]' src={NftBranding} alt="BrandingButton" />
-        <img className='mt-[-80px] ml-8 cursor-pointer' src={YtButton} alt="YouTubeButton" />
+      <img
+        className="mr-40 h-[480px] mt-[10rem] max-sm:hidden"
+        src={NftBranding}
+        alt="BrandingButton"
+      />
+      <div className="sm:hidden p-4 bg-blue-700 max-sm:flex max-sm:space-y-5 max-sm:flex-col  max-sm:items-center max-sm:justify-center max-sm:p-5">
+        <img className="sm:hidden" src={Adds} alt="BrandingButton" />
+        <img
+        className=""
+        src={YtButton}
+        alt="YouTubeButton"
+      />
+      </div>
+      <img
+        className="mt-[-80px] ml-8 cursor-pointer max-sm:hidden"
+        src={YtButton}
+        alt="YouTubeButton"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default RightBanner
+export default RightBanner;

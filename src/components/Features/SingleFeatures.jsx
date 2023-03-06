@@ -6,7 +6,7 @@ import Settings from "../../images/Settings.png";
 
 const SingleFeatures = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-between ml-24 mr-28 max-sm:-mt-3 max-sm:mr-0 max-sm:p-1 max-sm:ml-0 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+    <div className="flex flex-row flex-wrap justify-between ml-24 mr-28 max-sm:-mt-3 max-sm:mr-0 max-sm:p-1 max-sm:ml-0 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-xl:gap-5">
       <div className="w-[550px] h-[250px] bg-[#F2F9FF] rounded-md mt-20 max-sm:w-fit max-sm:h-[220px] sm:hidden">
         <div className="flex items-center gap-4 max-sm:-mt-2">
           <img className="h-14 mt-10 ml-10 max-sm:ml-8" src={Flame} alt="Flame"  />

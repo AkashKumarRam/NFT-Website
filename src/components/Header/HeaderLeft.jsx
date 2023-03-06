@@ -8,7 +8,7 @@ const HeaderLeft = () => {
     <div className='mt-28 ml-24 main-header-left'>
        <h2 className='font-header text-indigo-700 text-3xl nft-text'>NFT Life-Cycle Management Platform</h2>
        <h1 className='font-body text-6xl main-text'>Use NFT-Driven Customer <br />Engagement - at scale</h1> 
-       <p className='font-hero text-indigo-600 mt-4 text-lg sub-text'>Leverage NFTs to transform customer engagement and <br/>establish a powerful community-driven brand presence with<br/>Hexatick's comprehensive NFT management solution.</p>
+       <p className='font-hero text-indigo-600 mt-4 text-lg sub-text'>Leverage NFTs to transform customer engagement and establish a powerful community-driven brand presence with Hexatick's comprehensive NFT management solution.</p>
        {/* <img className='w-1/5 mt-14 cursor-pointer try-for-free' src={BlueButton} alt='try-for-free-button' />
        <p className='font-body text-xs mt-1 credit'>No Credit Card needed.</p> */}
        <div className='mt-20 flex flex-row items-center space-x-2 max-sm:-mt-10'>

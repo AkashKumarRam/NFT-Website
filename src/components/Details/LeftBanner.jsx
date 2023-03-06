@@ -19,7 +19,7 @@ const LeftBanner = () => {
   }, []);
 
   return (
-    <div className="ml-40 max-sm:ml-0 max-sm:p-4 mt-[10rem]">
+    <div className="ml-40 max-sm:ml-0 max-sm:p-4 mt-[10rem] space-y-8">
       <div className="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
         <h2 className="text-4xl font-body max-sm:text-3xl">It can be a</h2>
         <h1 className="font-body text-5xl mt-1 text-blue-600 max-sm:text-3xl">{BoxImage[index].title}</h1>
@@ -30,10 +30,10 @@ const LeftBanner = () => {
         />
       </div>
       <div className='mt-20 flex flex-col items-start  space-x-0 space-y-2 max-sm:-mt-10 max-sm:hidden'>
-        <input placeholder="Email ID" type="email" className="pl-4 w-[22rem] h-12 rounded-md border border-cyan-500 max-sm:w-[14rem]"  />
+        <input placeholder="Email ID" type="email" className="pl-4 w-[22rem] h-12 rounded-md border border-[#71BEFF] max-sm:w-[14rem]"  />
         <button className='h-12 w-28 border border-white rounded-md bg-blue-800 text-white text-center '>Join Waitlist</button>
        </div>
-       <img className="mt-8 sm:hidden" src={Information} alt="" />
+       {/* <img className="mt-8 sm:hidden" src={Information} alt="" /> */}
       {/* <img className="mt-6 cursor-pointer h-14 max-sm:hidden" src={BlueButton} alt="" />  */}
     </div>
   );

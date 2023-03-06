@@ -1,6 +1,7 @@
 import React from 'react';
-import BlueButton from "../../images/BlueButton.png";
+// import BlueButton from "../../images/BlueButton.png";
 import "../Header/HeaderLeft.css";
+import {Link} from "react-scroll";
 
 const HeaderLeft = () => {
   return (
@@ -11,13 +12,13 @@ const HeaderLeft = () => {
        {/* <img className='w-1/5 mt-14 cursor-pointer try-for-free' src={BlueButton} alt='try-for-free-button' />
        <p className='font-body text-xs mt-1 credit'>No Credit Card needed.</p> */}
        <div className='mt-20 flex flex-row items-center space-x-2 max-sm:-mt-10'>
-        <input placeholder="Email ID" type="email" className="pl-4 w-[22rem] h-12 rounded-md border border-cyan-500 max-sm:w-[14rem]"  />
+        <input placeholder="Email ID" type="email" className="pl-4 w-[22rem] h-12 rounded-md border border-[#71BEFF] max-sm:w-[14rem]"  />
         <button className='h-12 w-28 border border-white rounded-md bg-blue-800 text-white text-center '>Join Waitlist</button>
        </div>
        <p className='text-black text-[0.8rem] max-sm:hidden'>Join Waiting list</p>
 
        {/* <p className='mt-6 font-hero underline underline-offset-4 text-sm text-indigo-600 cursor-pointer demo'>Request Demo</p> */}
-       <p className='mt-6 max-sm:mt-20 font-hero underline underline-offset-4 text-sm text-indigo-600 cursor-pointer demo'>Contact Sales</p>
+      <Link to='form' spy={true} smooth={true} offset={10} duration={400} className='mt-12 max-sm:mt-20 font-hero underline underline-offset-4 text-sm text-indigo-600 cursor-pointer'>Contact Sales</Link>
     </div>    
   )
 }

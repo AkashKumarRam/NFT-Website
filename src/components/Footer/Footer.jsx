@@ -30,7 +30,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="flex cursor-pointer sm:hidden max-sm:flex max-sm:flex-row max-sm:items-center max-sm:justify-center max-sm:space-x-4 max-sm:mt-10">
+      <div className="flex cursor-pointer sm:hidden max-sm:flex max-sm:flex-row max-sm:items-center max-sm:justify-center max-sm:space-x-4 max-sm:mt-10 max-sm:pb-8">
           <img src={Instagram} alt="Intagram-Logo" />
           <img src={Linkedin} alt="LinkedIn-Logo" />
           <img src={Facebook} alt="Facebook-Logo" />

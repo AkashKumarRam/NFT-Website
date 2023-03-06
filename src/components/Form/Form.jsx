@@ -4,7 +4,7 @@ import "../Form/Form.css";
 
 const Form = () => {
   return (
-    <div className="p-5 mt-16 max-sm:flex max-sm:items-center max-sm:justify-center">
+    <div className="p-5 mt-16 max-sm:flex max-sm:items-center max-sm:justify-center" id="form">
       <div className="flex flex-row items-center space-x-20 justify-center max-sm:space-x-0 max-sm:items-center max-sm:justify-center">
         <img
           src={Vector}

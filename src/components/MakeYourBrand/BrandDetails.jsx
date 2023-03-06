@@ -16,7 +16,7 @@ const BrandDetails = () => {
               <input
                 placeholder="Email ID"
                 type="email"
-                className="pl-4 w-[18rem] h-12  rounded-md border border-cyan-500 max-sm:w-[20rem]"
+                className="pl-4 w-[18rem] h-12  rounded-md border border-[#71BEFF] max-sm:w-[18rem]"
               />
               <button className="h-12 w-28 border border-white rounded-md bg-blue-800 text-white text-center ">
                 Join Waitlist

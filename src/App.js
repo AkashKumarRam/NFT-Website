@@ -10,7 +10,7 @@
 // import TrustedPartners from "./components/TrustedPartners/TrustedPartners";
 // import Form from "./components/Form/Form";
 // import Footer from "./components/Footer/Footer";
-import {BrowserRouter,Routes,Route, useNavigate} from "react-router-dom";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home";
 import CaseStudies from "./components/Pages/CaseStudies";
 
@@ -38,7 +38,7 @@ function App() {
       <BrowserRouter>
         <Routes>
         <Route path="/" element={ <Home/> } />
-        <Route path="/casestudies" element={<CaseStudies/> } />
+        <Route path="/casestudies" element={<CaseStudies/>} />
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

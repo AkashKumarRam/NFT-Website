@@ -20,7 +20,7 @@
 
 @media only screen and (max-width: 640px) {
   .nft-text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-align: center;
     width: full;
@@ -30,7 +30,7 @@
 
 @media only screen and (max-width: 640px) {
   .main-text {
-    font-size: 32px;
+    font-size: 28px;
     width: full;
     margin-top: 5px;
     text-align: center;
@@ -44,7 +44,8 @@
         text-align: center;    */
             
     visibility: hidden;
-    position: relative; 
+    /* position: relative;  */
+   
   } 
 }
 
@@ -58,9 +59,8 @@
     font-style: poppins;
     margin-top: -1rem;
     font-size: 0.9rem;
-    margin-left: 2.8rem;
     font-weight: bold;
-    paddding: 5px;
+    justify-content: center;
   
   }
 }

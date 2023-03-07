@@ -1,7 +1,8 @@
 @media only screen and (max-width: 640px) {
     .main-nav {
         display: flex;
-        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

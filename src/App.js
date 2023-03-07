@@ -14,6 +14,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home";
 import Articles from "./components/Pages/Articles";
 import CaseStudies from "./components/Pages/CaseStudies";
+import Pricing from "./components/Pages/Pricing";
 
 function App() {
   // const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -41,6 +42,7 @@ function App() {
         <Route path="/" element={ <Home/> } />
         <Route path="/casestudies" element={<CaseStudies/>} />
         <Route path="/casestudydetail-cococola" element={<Articles/>} />
+        <Route path="/pricing" element={<Pricing/>} />
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

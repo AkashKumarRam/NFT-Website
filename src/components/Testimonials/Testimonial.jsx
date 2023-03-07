@@ -8,7 +8,7 @@ const Testimonial = () => {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-10 mt-14 p-4">
-      <h2 className="text-4xl text-black font-settings p-4 max-sm:text-3xl">
+      <h2 className="text-5xl text-black font-settings p-4 max-sm:text-3xl">
         Satisfied Customers
       </h2>
 

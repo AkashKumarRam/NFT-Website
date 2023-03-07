@@ -9,7 +9,7 @@ import {useNavigate} from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <div className="mt-20 bg-[#F2F9FF] flex justify-center space-x-72 h-72 max-sm:space-x-0 max-sm:h-auto max-sm:flex-col max-sm:items-center max-sm:justify-center">
+    <div className="mt-20 bg-[#F2F9FF] flex justify-center space-x-56 h-72 max-sm:space-x-0 max-sm:h-auto max-sm:flex-col max-sm:items-center max-sm:justify-center">
       <div className="space-y-8 mt-16 max-sm:text-center  max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
         <img onClick={() => navigate('/')} className="cursor-pointer" src={BlackLogo} alt="Footer-logo" />
         <p className="font-poppins">

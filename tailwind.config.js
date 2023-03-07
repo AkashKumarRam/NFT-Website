@@ -12,6 +12,9 @@ module.exports = {
         settings: ['Noto Sans'],
         poppins: ['Poppins'],
         regular: ['Noto Sans'],
+        space: ['Space Grotesk'],
+        inter: ['Inter'],
+        intermedium: ['Inter']
       },
       fontSize: {
         'credit': '0.875rem',

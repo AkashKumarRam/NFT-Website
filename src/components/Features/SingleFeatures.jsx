@@ -6,6 +6,7 @@ import Settings from "../../images/Settings.png";
 
 const SingleFeatures = () => {
   return (
+    <>
     <div className="flex flex-row flex-wrap justify-between ml-24 mr-28 max-sm:-mt-3 max-sm:mr-0 max-sm:p-1 max-sm:ml-0 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
       <div className="w-[550px] h-[250px] bg-[#F2F9FF] rounded-md mt-20 max-sm:w-fit max-sm:h-[220px] sm:hidden">
         <div className="flex items-center gap-4 max-sm:-mt-2">
@@ -212,7 +213,9 @@ const SingleFeatures = () => {
         </div>
       </div> */}
 
-      <div className="max-sm:hidden mt-10 space-y-5 flex flex-col items-center justify-center pr-5 pl-5">
+      
+    </div>
+    <div className="max-sm:hidden mt-10 space-y-5 flex flex-col items-center pr-5 pl-5">
         <div className="flex flex-row space-x-5">
           <div className="w-[550px] h-[250px] bg-[#F2F9FF] rounded-md p-12 space-y-5">
             <div className="flex flex-row items-center space-x-5">
@@ -234,7 +237,7 @@ const SingleFeatures = () => {
             <p className="font-regular">
               Skip hiring expensive blockchain developers and manage digital
               collectible with our easy-to-use deployment solution that doesn’t
-              require technical know-how   ...............
+              require technical know-how
             </p>
           </div>
         </div>
@@ -267,7 +270,7 @@ const SingleFeatures = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

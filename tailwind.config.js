@@ -10,7 +10,8 @@ module.exports = {
         header: ['Red Hat Display'],
         hero: ['Red Hat Mono'],
         settings: ['Noto Sans'],
-        poppins: ['Poppins']
+        poppins: ['Poppins'],
+        regular: ['Noto Sans'],
       },
       fontSize: {
         'credit': '0.875rem',

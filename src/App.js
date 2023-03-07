@@ -12,6 +12,7 @@
 // import Footer from "./components/Footer/Footer";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home";
+import Articles from "./components/Pages/Articles";
 import CaseStudies from "./components/Pages/CaseStudies";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/casestudies" element={<CaseStudies/>} />
+        <Route path="/casestudydetail-cococola" element={<Articles/>} />
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

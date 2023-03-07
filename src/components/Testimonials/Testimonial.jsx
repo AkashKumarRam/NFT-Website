@@ -11,6 +11,7 @@ const Testimonial = () => {
       <h2 className="text-4xl text-black font-settings p-4 max-sm:text-3xl">
         Satisfied Customers
       </h2>
+
       <div className="flex flex-row space-x-8 items-center justify-between">
         <div className="flex flex-col space-y-6 bg-[#F2F9FF] p-5  w-80 min-h-[15rem]">
           <img src={Stars} alt="review star" className="w-24" />
@@ -21,6 +22,7 @@ const Testimonial = () => {
           </p>
           <img src={Avatar} alt="avatar" className="w-[180px]" />
         </div>
+
         <div className="flex flex-col space-y-6 bg-[#F2F9FF] p-5  w-80 min-h-[15rem]">
           <img src={Stars} alt="review star" className="w-24" />
           <p className="text-sm">
@@ -30,6 +32,7 @@ const Testimonial = () => {
           </p>
           <img src={Avatar1} alt="avatar" className="w-[180px]" />
         </div>
+
         <div className="flex flex-col space-y-6 bg-[#F2F9FF] p-5  w-80 min-h-[15rem]">
           <img src={Stars} alt="review star" className="w-24" />
           <p className="text-sm">
@@ -39,6 +42,7 @@ const Testimonial = () => {
           </p>
           <img src={Avatar2} alt="avatar" className="w-[180px]" />
         </div>
+        
       </div>
     </div>
   );

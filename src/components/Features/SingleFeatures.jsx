@@ -213,7 +213,7 @@ const SingleFeatures = () => {
       </div> */}
 
       <div className="max-sm:hidden mt-10 space-y-5 items-center">
-        <div className="flex flex-row space-x-5">
+        <div className="flex flex-row space-x-5 pr-5 pl-5">
           <div className="w-[550px] h-[250px] bg-[#F2F9FF] rounded-md p-12 space-y-5">
             <div className="flex flex-row items-center space-x-5">
               <img className="h-14" src={Flame} alt="fire-logo" />
@@ -240,7 +240,7 @@ const SingleFeatures = () => {
         </div>
 
         <div>
-          <div className="flex flex-row space-x-5">
+          <div className="flex flex-row space-x-5 pr-5 pl-5">
             <div className="w-[550px] h-[250px] bg-[#F2F9FF] rounded-md p-12 space-y-5">
               <div className="flex flex-row items-center space-x-5">
                 <img className="h-14" src={Chart} alt="save-time-logo" />

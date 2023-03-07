@@ -234,7 +234,7 @@ const SingleFeatures = () => {
             <p className="font-regular">
               Skip hiring expensive blockchain developers and manage digital
               collectible with our easy-to-use deployment solution that doesn’t
-              require technical know-how
+              require technical know-how   ...............
             </p>
           </div>
         </div>

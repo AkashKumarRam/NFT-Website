@@ -12,7 +12,7 @@ const PricingList = () => {
       </div>
 
       {/* Pricing */}
-      <div className="mt-16 pl-8 pr-8 space-x-3 flex flex-row justify-center max-sm:flex max-sm:items-center max-sm:justify-center max-sm:flex-col max-sm:space-y-5">
+      <div className="mt-16 pl-10 pr-10 space-x-3 flex flex-row justify-center max-sm:flex max-sm:items-center max-sm:justify-center max-sm:flex-col max-sm:space-y-5">
         <div className="border-2 h-fit rounded-3xl border-slate-900 space-y-10 p-5 pb-8">
           <div className="space-y-2">
             <h3 className="font-inter text-4xl font-bold">Professional</h3>
@@ -25,7 +25,7 @@ const PricingList = () => {
           <div className="space-x-2 space-y-2">
             <s className="text-3xl font-bold">$59</s>
             <span className="text-5xl font-bold">$39</span>
-            <p className="font-inter text-sm font-thin">Valid for 1 Month</p>
+            <p className="font-inter text-sm font-medium">Valid for 1 Month</p>
           </div>
 
           <div className="space-y-5">
@@ -59,7 +59,7 @@ const PricingList = () => {
           <div className="space-x-2 space-y-2">
             <s className="text-3xl font-bold">$349</s>
             <span className="text-5xl font-bold">$199</span>
-            <p className="font-inter text-sm font-thin">Valid for 6 Months</p>
+            <p className="font-inter text-sm font-medium">Valid for 6 Months</p>
           </div>
 
           <div className="space-y-5">
@@ -97,7 +97,7 @@ const PricingList = () => {
             {/* <s className="text-2xl font-bold">$349</s>
             <span className="text-4xl font-bold">$199</span> */}
             <p className="text-5xl font-bold">Custom</p>
-            <p className="font-inter text-sm font-thin">Free forever</p>
+            <p className="font-inter text-sm font-medium">Free forever</p>
           </div>
 
           <div className="space-y-5">

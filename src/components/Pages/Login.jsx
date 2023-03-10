@@ -23,15 +23,15 @@ const Login = () => {
             <h1 className="font-bold text-2xl font-poppins">Hey, Innovator</h1>
             <p className="text-sm text-gray-400 font-poppins" >Enter the information you entered while registering</p>
           </div>
-          <div className="mt-5 flex flex-col space-y-4">
-            <div className="flex flex-col">
+          <div className="mt-5 flex flex-col space-y-4 ">
+            <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
               <label className="text-black text-md font-poppins cursor-pointer">Email</label>
               <input
                 type="email"
                 className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
               <label className="text-black text-md font-poppins cursor-pointer">Password</label>
               <input
                 type="password"
@@ -39,7 +39,7 @@ const Login = () => {
               />
             </div>
           </div>
-          <div className="w-full flex-row mt-[0.5rem] items-end max-sm:flex max-sm:items-end">
+          <div className="w-full flex-row mt-[0.5rem] items-end max-sm:flex max-sm:items-end max-sm:pl-5 max-sm:pr-5">
             <p className="text-sm text-end font-poppins cursor-pointer w-[22rem]">Forgot Password?</p>
           </div>
           <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4]">
@@ -51,7 +51,7 @@ const Login = () => {
             <hr className="border-gray-400 border-1 w-[8rem] mt-[3px]" />
           </div>
           <div className="w-full flex flex-col items-start justify-center max-sm:flex max-sm:flex-col max-sm:items-center">
-            <button class="flex items-center justify-center px-4 py-2 space-x-2 border-[1px]  text-gray-600 bg-stone-50 mt-[1rem] rounded-sm w-[22rem] border-black">
+            <button class="flex items-center justify-center px-4 py-2 space-x-2 border-[1px]  text-gray-600 bg-stone-50 mt-[1rem] rounded-sm w-[22rem] border-black max-sm:pl-5 max-sm:pr-5">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/235px-Google_%22G%22_Logo.svg.png"
                 alt="Google logo"

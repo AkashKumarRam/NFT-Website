@@ -13,11 +13,13 @@ const HeaderLeft = () => {
         Use NFT-Driven Customer <br />
         Engagement - at scale
       </h1>
+      <div className="max-sm:flex max-sm:items-center max-sm:justify-center">
       <p className="font-hero text-indigo-600 mt-4 text-lg sub-text max-sm:ml-11">
         Leverage NFTs to transform customer engagement and <br /> establish a
         powerful community-driven brand presence with <br /> Hexatick's
         comprehensive NFT management solution.
       </p>
+      </div>
       {/* <img className='w-1/5 mt-14 cursor-pointer try-for-free' src={BlueButton} alt='try-for-free-button' />
        <p className='font-body text-xs mt-1 credit'>No Credit Card needed.</p> */}
       <div className="mt-20 flex flex-row items-center space-x-2 max-sm:-mt-10">

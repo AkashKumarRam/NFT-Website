@@ -12,6 +12,7 @@
 // import Footer from "./components/Footer/Footer";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home";
+import AccountSetup from "./components/Pages/AccountSetup/AccountSetup";
 import Articles from "./components/Pages/Articles";
 import CaseStudies from "./components/Pages/CaseStudies";
 import Login from "./components/Pages/Login";
@@ -47,6 +48,7 @@ function App() {
         <Route path="/pricing" element={<Pricing/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/acoountsetup-step-1" element={<AccountSetup/>} />
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

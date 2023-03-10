@@ -9,12 +9,12 @@ const SignUp = () => {
   const navigate = useNavigate();
   return (
     // <div className="min-h-screen flex items-center justify-center bg-[#FFFAFA]">
-    <div className="flex flex-row h-[100vh] space-x-12">
-      <div className="bg-[#F2F5FE] w-1/2 flex items-center justify-center">
+    <div className="flex flex-row h-[100vh] space-x-12 max-sm:space-x-0 max-sm:flex max-sm:items-center max-sm:-mt-12">
+      <div className="bg-[#F2F5FE] w-1/2 flex items-center justify-center max-sm:hidden">
         <img src={Login} className="h-[18rem]" alt="blur circle" />
       </div>
-      <div className="bg-white p-6 w-1/2 mt-14">
-        <div className="flex flex-row items-center space-x-3">
+      <div className="bg-white p-6 w-1/2 mt-14 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-screen max-sm:pl-10 max-sm:pr-10">
+        <div className="flex flex-row items-center space-x-3 max-sm:-ml-[12rem]">
           <img
             onClick={() => navigate("/")}
             className="cursor-pointer"
@@ -61,7 +61,7 @@ const SignUp = () => {
           <p className="font-poppins">or</p>
           <hr className="border-gray-400 border-1 w-[8rem] mt-[3px]" />
         </div>
-        <div className="w-full flex flex-col items-start justify-center">
+        <div className="w-full flex flex-col items-start justify-center max-sm:flex max-sm:flex-col max-sm:items-center">
           <button class="flex items-center justify-center px-4 py-2 space-x-2 border-[1px]  text-gray-600 bg-stone-50 mt-[1rem] rounded-sm w-[22rem] border-black">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/235px-Google_%22G%22_Logo.svg.png"
@@ -74,7 +74,7 @@ const SignUp = () => {
             <p className="text-md font-poppins text-black">Have a Account?</p>
             <p
               onClick={() => navigate("/login")}
-              className="text-md font-semibold cursor-pointer text-[#2F3FD4]"
+              className="text-md font-poppins cursor-pointer text-[#2F3FD4]"
             >
               Log In
             </p>

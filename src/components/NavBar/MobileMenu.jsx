@@ -61,7 +61,7 @@ function MobileMenu() {
             <Link to='form' spy={true} smooth={true} offset={10} duration={400} className="block w-full px-4 py-2 mt-2 text-sm font-medium border-[#2F3FD4] rounded-md border-2 p-2 text-[#2F3FD4] font-body">
               Contact Sales
             </Link>
-            <button className="block w-full px-4 py-2 mt-2 text-sm font-medium border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-28">
+            <button onClick={() => navigate('/signup')} className="block w-full px-4 py-2 mt-2 text-sm font-medium border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-28">
               Sign Up
             </button>
           </div>

@@ -6,8 +6,8 @@ import LogoText from "../../images/LogoText.png";
 import "../NavBar/NavBar.css";
 import {useNavigate} from "react-router-dom";
 import {Link} from "react-scroll";
-import {TfiMenu} from "react-icons/tfi";
-import {RxCross2} from "react-icons/rx";
+// import {TfiMenu} from "react-icons/tfi";
+// import {RxCross2} from "react-icons/rx";
 import MobileMenu from "./MobileMenu";
 
 const NavBar = () => {
@@ -28,7 +28,7 @@ const NavBar = () => {
       <div className="flex flex-row  cursor-pointer space-x-5 pl-5 pr-5">
         {/* <img src={ButtonA} alt="contact-button" className="hidden sm:flex"/> */}
         <Link to='form' spy={true} smooth={true} offset={10} duration={400} className="border-[#2F3FD4] rounded-md border-2 p-2 text-[#2F3FD4] font-body max-sm:hidden">Contact Sales</Link>
-        <button className="border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-28 max-sm:hidden">Sign Up</button>
+        <button onClick={() => navigate('/signup')} className="border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-28 max-sm:hidden">Sign Up</button>
         {/* <TfiMenu size={25} className="sm:hidden flex flex-row items-center justify-center"/>
         <RxCross2 size={25} className="sm:hidden flex flex-row items-center justify-center"/> */}
         {/* <img src={ButtonB} alt="signup-button" className="sign-up"/> */}

@@ -14,8 +14,8 @@ const Login = () => {
             <img src={Log} className="h-[18rem]" alt="blur circle" />
           </div>
         </div>
-        <div className="bg-white p-6 w-1/2 mt-14 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-screen max-sm:p-10">
-          <div className="flex flex-row items-center space-x-3 w-full max-sm:-ml-[2.5rem] max-sm:flex max-sm:flex-row max-sm:items-start ">
+        <div className="bg-white p-6 w-1/2 mt-14 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-screen max-sm:pr-5 max-sm:pl-5">
+          <div className="flex flex-row items-center space-x-3 w-full max-sm:-ml-[2.5rem] max-sm:flex max-sm:flex-row max-sm:items-start max-sm:pr-5 max-sm:pl-5 ">
             <img onClick={() => navigate('/')} src={LogoImage} alt="logo"/>
             <img onClick={() => navigate('/')} src={LogoText} alt="logotext" />
           </div>
@@ -39,7 +39,7 @@ const Login = () => {
               />
             </div>
           </div>
-          <div className="w-full flex-row mt-[0.5rem] items-end max-sm:flex max-sm:items-end max-sm:pl-5 max-sm:pr-5">
+          <div className="w-full flex-row mt-[0.5rem] items-end max-sm:flex max-sm:items-end">
             <p className="text-sm text-end font-poppins cursor-pointer w-[22rem]">Forgot Password?</p>
           </div>
           <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4]">

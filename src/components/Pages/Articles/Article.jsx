@@ -40,10 +40,10 @@ const Article = () => {
           The campaign was a huge success, with all of the NFTs selling out
           within hours of their release. In total, there were 2,000 NFTs
           available, with prices ranging from 1 ETH (approximately $1,800 at the
-          time) to 2.5 ETH (approximately $4,500 at the time). Here are some key
-          metrics from the campaign: Total sales: 1,288.5 ETH (approximately
-          $1.5 million at the time) Total buyers: 621 Average price per NFT: 1.7
-          ETH (approximately $3,000 at the time) Top-selling NFT: a polar bear
+          time) to 2.5 ETH (approximately $4,500 at the time). <br/><br/>Here are some key
+          metrics from the campaign:<br/><br/>&#10003; Total sales: 1,288.5 ETH (approximately
+          $1.5 million at the time) <br/>&#10003; Total buyers: 621 Average price per NFT: 1.7
+          ETH (approximately $3,000 at the time) <br/>&#10003; Top-selling NFT: a polar bear
           NFT, which sold for 3.17 ETH (approximately $5,700 at the time)
         </p>
 

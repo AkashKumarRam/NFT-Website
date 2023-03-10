@@ -48,7 +48,7 @@ function App() {
         <Route path="/pricing" element={<Pricing/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/acoountsetup-step-1" element={<AccountSetup/>} />
+        <Route path="/accountsetup-step-1" element={<AccountSetup/>} />
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

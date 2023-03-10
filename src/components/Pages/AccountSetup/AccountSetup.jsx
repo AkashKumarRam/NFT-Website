@@ -39,7 +39,7 @@ const AccountSetup = () => {
                 Phone Number
               </label>
               <input
-                type="number"
+                type="text"
                 className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2"
               />
             </div>
@@ -128,7 +128,10 @@ const AccountSetup = () => {
                 name="profession"
                 value="Founder"
               />
-              <input type="text" class="border-b-2 border-b-gray-900 border-dotted" />
+              <input
+                type="text"
+                className="border-[1px] border-gray-900 rounded-md h-[2rem] w-[16rem] pl-2"
+              />
 
             </label>
             <button className="mt-6 border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-28 max-sm:hidden">NEXT</button>

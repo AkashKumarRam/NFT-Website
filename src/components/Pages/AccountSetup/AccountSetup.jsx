@@ -143,13 +143,4 @@ const AccountSetup = () => {
   );
 };
 
-{
-  /* <div>
-        <p>Account Set Up (1/3)</p>
-      </div>
-      <div className="w-3/4 bg-[#D9D9D9] h-2">
-        <div className="bg-[#2F3FD4] h-2 text-xs font-medium text-blue-100 text-center p-0.5 leading-none w-1/3"></div>
-      </div> */
-}
-
 export default AccountSetup;

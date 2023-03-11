@@ -13,10 +13,15 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home";
 import AccountSetup from "./components/Pages/AccountSetup/AccountSetup";
+import AccountSetupStep2 from "./components/Pages/AccountSetup/AccountSetupStep2";
+import PendingVerification from "./components/Pages/AccountSetup/PendingVerification";
+import WorkEmail from "./components/Pages/AccountSetup/WorkEmail";
 import Articles from "./components/Pages/Articles";
 import CaseStudies from "./components/Pages/CaseStudies";
+import ForgotPassword from "./components/Pages/ForgotPassword";
 import Login from "./components/Pages/Login";
 import Pricing from "./components/Pages/Pricing";
+import ResetPassword from "./components/Pages/ResetPassword";
 import SignUp from "./components/Pages/SignUp";
 
 function App() {
@@ -49,6 +54,11 @@ function App() {
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/accountsetup-step-1" element={<AccountSetup/>} />
+        <Route path="/accountsetup-step-2" element={<AccountSetupStep2/>} />
+        <Route path="/workemail-verification" element={<WorkEmail/>} />
+        <Route path="/pending-verification" element={<PendingVerification/>} />
+        <Route path="/forgetpassword" element={<ForgotPassword/>} />
+        <Route path="/resetpassword" element={<ResetPassword/>} />
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

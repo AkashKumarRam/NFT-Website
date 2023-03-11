@@ -13,34 +13,34 @@ const ResetPassword = () => {
         </div>
       </div>
       <div className="bg-white p-6  w-1/2 max-sm:w-full max-sm:p-10 mt-14 max-sm:flex max-sm:flex-col max-sm:items-center">
-       <div className='max-sm:flex max-sm:flex-col max-sm:items-start'>
-       <h2 className='text-black text-2xl font-poppins'>Create new password</h2>
+       <div className=''>
+       <h2 className='text-black text-2xl font-poppins max-sm:-ml-12'>Create new password</h2>
        </div>
-        <p className="mt-[1rem] text-xs font-poppins text-gray-400 w-[22rem]">
+        <p className="mt-[1rem] text-xs font-poppins text-gray-400 w-[22rem] max-sm:w-[20rem]">
           New password must be the different from the previously used password
         </p>
 
-        <div className="mt-5 flex flex-col space-y-4">
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
+        <div className="mt-5 flex flex-col space-y-4 ">
+          <div className="flex flex-col max-sm:ml-[8rem] max-sm:mr-[8rem]">
             <label className="text-black text-md font-poppins cursor-pointer">
             Password
             </label>
             <input
               type="password"
-              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2"
+              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
             />
           </div>
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
+          <div className="flex flex-col max-sm:ml-[8rem] max-sm:mr-[8rem]">
             <label className="text-black text-md font-poppins cursor-pointer">
                Confirm Password
             </label>
             <input
               type="password"
-              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2"
+              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
             />
           </div>
         </div>
-        <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4]">
+        <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[20rem]">
           Continue
         </button>
 

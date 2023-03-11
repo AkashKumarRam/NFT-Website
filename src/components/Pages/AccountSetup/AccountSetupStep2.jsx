@@ -4,7 +4,7 @@ const AccountSetupStep2 = () => {
   return (
     <div className="p-20 flex flex-col items-center justify-center -mt-16">
       <div className="w-full">
-        <h2 className="text-xl">Account Set Up(2/3)</h2>
+        <h2 className="text-xl">Account Set Up (2/3)</h2>
         <div className="w-full bg-gray-100 h-3 flex flex-row items-start justify-start mt-[1rem]">
           <div className="h-3 bg-blue-800 w-2/3"></div>
         </div>

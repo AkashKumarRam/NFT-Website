@@ -1,6 +1,6 @@
 import React from "react";
 // import BlueButton from "../../images/BlueButton.png";
-import "../Header/HeaderLeft.css";
+// import "../Header/HeaderLeft.css";
 import { Link } from "react-scroll";
 
 const HeaderLeft = () => {
@@ -13,12 +13,19 @@ const HeaderLeft = () => {
         Use NFT-Driven Customer <br />
         Engagement - at scale
       </h1>
-      <div className="max-sm:flex max-sm:items-center max-sm:justify-center">
-      <p className="font-hero text-indigo-600 mt-4 text-lg sub-text max-sm:ml-11">
-        Leverage NFTs to transform customer engagement and <br /> establish a
-        powerful community-driven brand presence with <br /> Hexatick's
-        comprehensive NFT management solution.
-      </p>
+      <div className="max-sm:hidden">
+        <p className="font-hero text-indigo-600 mt-4 text-lg sub-text max-sm:ml-11">
+          Leverage NFTs to transform customer engagement and <br /> establish a
+          powerful community-driven brand presence with <br /> Hexatick's
+          comprehensive NFT management solution.
+        </p>
+      </div>
+
+      {/* For Mobile */}
+      <div className="sm:hidden mb-14">
+        <p className="font-hero text-indigo-600 mt-4 text-sm text-center">
+        Leverage NFTs to transform customer engagement and establish a powerful community-driven brand presence
+        </p>
       </div>
       {/* <img className='w-1/5 mt-14 cursor-pointer try-for-free' src={BlueButton} alt='try-for-free-button' />
        <p className='font-body text-xs mt-1 credit'>No Credit Card needed.</p> */}

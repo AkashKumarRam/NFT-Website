@@ -1,4 +1,44 @@
 import React from "react";
+import Select from "react-select";
+
+const options = [
+  { value: "Designer", label: "Designer" },
+  { value: "Developer", label: "Developer" },
+  { value: "Marketing", label: "Marketing" },
+  { value: "Starup", label: "Starup" },
+  { value: "NFT", label: "NFT" },
+];
+
+const customStyles = {
+  control: (provided) => ({
+    ...provided,
+    width: "22rem",
+    height: "2.5rem",
+    borderRadius: "6px",
+    border: "1px solid black",
+    boxShadow: "none",
+    "&:hover": {
+      border: "1px solid #aaa",
+    },
+  }),
+  menu: (provided) => ({
+    ...provided,
+    width: "22rem",
+    borderRadius: "6px",
+    boxShadow: "none",
+  }),
+  // option: (provided, state) => ({
+  //   ...provided,
+  //   backgroundColor: state.isFocused ? "#eee" : "transparent",
+  //   "&:hover": {
+  //     backgroundColor: "#eee",
+  //   },
+  // }),
+  singleValue: (provided) => ({
+    ...provided,
+    color: "#555",
+  }),
+};
 
 const AccountSetupStep3 = () => {
   return (
@@ -18,15 +58,9 @@ const AccountSetupStep3 = () => {
           <label className="text-black text-md font-poppins cursor-pointer">
             Type of Business
           </label>
-          <select
-            id="countries"
-            className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2"
-          >
-            <option value="US" className="font-poppins">Designer</option>
-            <option value="CA" className="font-poppins">Developer</option>
-            <option value="FR" className="font-poppins">Startup</option>
-            <option value="DE" className="font-poppins">Marketing Agency</option>
-          </select>
+
+          <Select options={options} styles={customStyles} />
+
           <div className="flex flex-row items-center  space-x-5 mt-[2rem]">
             <div className="flex flex-col">
               <label className="text-black text-md font-poppins cursor-pointer">

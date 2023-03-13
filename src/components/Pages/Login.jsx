@@ -15,7 +15,7 @@ const Login = () => {
           </div>
         </div>
         <div className="bg-white p-6 w-1/2 mt-14 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-full">
-          <div className="flex flex-row items-center space-x-3 w-full max-sm:ml-[1rem] max-sm:flex max-sm:flex-row max-sm:items-start">
+          <div className="flex flex-row items-center space-x-3 w-full max-sm:flex max-sm:flex-row max-sm:items-start max-sm:-ml-2">
             <img onClick={() => navigate('/')} src={LogoImage} alt="logo"/>
             <img onClick={() => navigate('/')} src={LogoText} alt="logotext" />
           </div>
@@ -28,30 +28,30 @@ const Login = () => {
               <label className="text-black text-md font-poppins cursor-pointer">Email</label>
               <input
                 type="email"
-                className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2"
+                className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
               />
             </div>
             <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
               <label className="text-black text-md font-poppins cursor-pointer">Password</label>
               <input
                 type="password"
-                className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2"
+                className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
               />
             </div>
           </div>
           <div className="w-full flex-row mt-[0.5rem] items-end max-sm:flex max-sm:items-end">
-            <p className="text-sm text-end font-poppins cursor-pointer w-[22rem]">Forgot Password?</p>
+            <p className="text-sm text-end font-poppins cursor-pointer w-[22rem] max-sm:w-[20rem]">Forgot Password?</p>
           </div>
-          <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4]">
+          <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[20rem]">
             LOGIN
           </button>
-          <div className="flex flex-row items-center w-[22rem] justify-between mt-[1rem]">
+          <div className="flex flex-row items-center w-[22rem] justify-between mt-[1rem] max-sm:w-[20rem]">
             <hr className="border-gray-400 border-1 w-[8rem] mt-[3px]" />
             <p className="text-gray-400 font-poppins">or</p>
             <hr className="border-gray-400 border-1 w-[8rem] mt-[3px]" />
           </div>
           <div className="w-full flex flex-col items-start justify-center max-sm:flex max-sm:flex-col max-sm:items-center">
-            <button class="flex items-center justify-center px-4 py-2 space-x-2 border-[1px]  text-gray-600 bg-stone-50 mt-[1rem] rounded-sm w-[22rem] border-black max-sm:pl-5 max-sm:pr-5">
+            <button class="flex items-center justify-center px-4 py-2 space-x-2 border-[1px]  text-gray-600 bg-stone-50 mt-[1rem] rounded-sm w-[22rem] border-black max-sm:pl-5 max-sm:pr-5 max-sm:w-[20rem]">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/235px-Google_%22G%22_Logo.svg.png"
                 alt="Google logo"

@@ -13,11 +13,11 @@ const ForgotPassword = () => {
         </div>
       </div>
       <div className="bg-white p-6 w-1/2 mt-14 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-full">
-        <div className="flex flex-row items-center space-x-3 w-full max-sm:ml-[1rem] max-sm:flex max-sm:flex-row max-sm:items-start">
+        <div className="flex flex-row items-center space-x-3 w-full max-sm:flex max-sm:flex-row max-sm:items-start max-sm:-ml-4">
           <img src={LogoImage} alt="logo" />
           <img src={LogoText} alt="logotext" />
         </div>
-        <p className="mt-[2rem] text-xs font-poppins text-gray-400 w-[22rem]">
+        <p className="mt-[2rem] text-xs font-poppins text-gray-400 w-[22rem] max-sm:w-[20rem]">
           Enter the email address associated witht the accountand we will send
           you a link to reset password
         </p>
@@ -29,11 +29,11 @@ const ForgotPassword = () => {
             </label>
             <input
               type="email"
-              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2"
+              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
             />
           </div>
         </div>
-        <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4]">
+        <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[20rem]">
           Continue
         </button>
 

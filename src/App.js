@@ -14,8 +14,10 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home";
 import AccountSetup from "./components/Pages/AccountSetup/AccountSetup";
 import AccountSetupStep2 from "./components/Pages/AccountSetup/AccountSetupStep2";
+import AccountSetupStep3 from "./components/Pages/AccountSetup/AccountSetupStep3";
 import PendingVerification from "./components/Pages/AccountSetup/PendingVerification";
 import WorkEmail from "./components/Pages/AccountSetup/WorkEmail";
+import AdminDashBoard from "./components/Pages/Admin Dashboard/AdminDashBoard";
 import Articles from "./components/Pages/Articles";
 import CaseStudies from "./components/Pages/CaseStudies";
 import ForgotPassword from "./components/Pages/ForgotPassword";
@@ -23,6 +25,11 @@ import Login from "./components/Pages/Login";
 import Pricing from "./components/Pages/Pricing";
 import ResetPassword from "./components/Pages/ResetPassword";
 import SignUp from "./components/Pages/SignUp";
+import Collection from "./components/Pages/Admin Dashboard/Collection";
+import ArtWork from "./components/Pages/Admin Dashboard/Artwork";
+import Integration from "./components/Pages/Admin Dashboard/Integration";
+import Settings from "./components/Pages/Admin Dashboard/Settings";
+import Targeting from "./components/Pages/Admin Dashboard/Targeting";
 
 function App() {
   // const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -55,10 +62,18 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/accountsetup-step-1" element={<AccountSetup/>} />
         <Route path="/accountsetup-step-2" element={<AccountSetupStep2/>} />
+        <Route path="/accountsetup-step-3" element={<AccountSetupStep3/>} />
         <Route path="/workemail-verification" element={<WorkEmail/>} />
         <Route path="/pending-verification" element={<PendingVerification/>} />
         <Route path="/forgetpassword" element={<ForgotPassword/>} />
         <Route path="/resetpassword" element={<ResetPassword/>} />
+        <Route path="/admin-dashboard" element={<AdminDashBoard/>} />
+        <Route path="/collection" element={<Collection/>} />
+        <Route path="/artwork" element={<ArtWork/>} />
+        <Route path="/integration" element={<Integration/>} />
+        <Route path="/settings" element={<Settings/>} />
+        <Route path="/targeting" element={<Targeting/>} />
+        
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Profile from "../../../images/profile_photo.png";
 // import { useNavigate } from "react-router-dom";
 import ArtworkBlue from "../../../images/ArtworkBlue.png";
@@ -16,6 +16,12 @@ import TargetGray from "../../../images/TargetGray.png";
 import MenuList from "./MenuList";
 
 const Sidebar = () => {
+  const [activeItem, setActiveItem] = useState(null);
+
+  const handleItemClick = (item) => {
+    setActiveItem(item);
+  }
+
   return (
     <div>
       <aside

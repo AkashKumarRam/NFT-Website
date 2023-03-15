@@ -1,64 +1,117 @@
 import React, { useMemo } from "react";
 import { useTable, useRowSelect } from "react-table";
 import "tailwindcss/tailwind.css";
-import {MdDelete} from "react-icons/md";
+import { MdDelete } from "react-icons/md";
+import { BiDownArrow } from "react-icons/bi";
 
 const data = [
   {
-    recipientName: "John Doe",
-    collection: "Monday",
-    deliveryStatus: "Delivered",
-    trigger: "Email",
-    currentStatus: "Claimed",
-    triggerTimeStamp: "2022-03-15T08:10:00.000Z",
+    id: 1,
+    name: "Monica Geller",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "True",
+    sms: "True",
+    ens: "True",
+    etgadd: "False",
+    claimedstatus: "True",
+    lastsent: 1678877736662,
   },
   {
-    recipientName: "Jane Doe",
-    collection: "Tuesday",
-    deliveryStatus: "In transit",
-    trigger: "SMS",
-    currentStatus: "Pending",
-    triggerTimeStamp: "2022-03-15T10:25:00.000Z",
+    id: 2,
+    name: "Joey Tribani",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "False",
+    sms: "False",
+    ens: "True",
+    ethadd: "True",
+    claimedstatus: "False",
+    lastsent: 1678877736662,
   },
   {
-    recipientName: "Bob Smith",
-    collection: "Wednesday",
-    deliveryStatus: "Not delivered",
-    trigger: "Push notification",
-    currentStatus: "Claimed",
-    triggerTimeStamp: "2022-03-15T14:35:00.000Z",
+    id: 3,
+    name: "Monica Geller",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "True",
+    sms: "True",
+    ens: "True",
+    etgadd: "False",
+    claimedstatus: "True",
+    lastsent: 1678877736662,
   },
   {
-    recipientName: "Bob Smith",
-    collection: "Wednesday",
-    deliveryStatus: "Not delivered",
-    trigger: "Push notification",
-    currentStatus: "Claimed",
-    triggerTimeStamp: "2022-03-15T14:35:00.000Z",
+    id: 4,
+    name: "Monica Geller",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "True",
+    sms: "True",
+    ens: "True",
+    etgadd: "False",
+    claimedstatus: "True",
+    lastsent: 1678877736662,
   },
   {
-    recipientName: "Bob Smith",
-    collection: "Wednesday",
-    deliveryStatus: "Not delivered",
-    trigger: "Push notification",
-    currentStatus: "Claimed",
-    triggerTimeStamp: "2022-03-15T14:35:00.000Z",
+    id: 5,
+    name: "Monica Geller",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "True",
+    sms: "True",
+    ens: "True",
+    etgadd: "False",
+    claimedstatus: "True",
+    lastsent: 1678877736662,
   },
   {
-    recipientName: "Bob Smith",
-    collection: "Wednesday",
-    deliveryStatus: "Not delivered",
-    trigger: "Push notification",
-    currentStatus: "Claimed",
-    triggerTimeStamp: "2022-03-15T14:35:00.000Z",
+    id: 6,
+    name: "Monica Geller",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "True",
+    sms: "True",
+    ens: "True",
+    etgadd: "False",
+    claimedstatus: "True",
+    lastsent: 1678877736662,
   },
   {
-    recipientName: "Bob Smith",
-    collection: "Wednesday",
-    deliveryStatus: "Not delivered",
-    trigger: "Push notification",
-    currentStatus: "Claimed",
-    triggerTimeStamp: "2022-03-15T14:35:00.000Z",
+    id: 7,
+    name: "Joey Tribani",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "False",
+    sms: "False",
+    ens: "True",
+    ethadd: "True",
+    claimedstatus: "False",
+    lastsent: 1678877736662,
+  },
+  {
+    id: 8,
+    name: "Monica Geller",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "True",
+    sms: "True",
+    ens: "True",
+    etgadd: "False",
+    claimedstatus: "True",
+    lastsent: 1678877736662,
+  },
+  {
+    id: 9,
+    name: "Monica Geller",
+    collection: "Wizard and Wolves,Edition",
+    trigger: "Purchase",
+    email: "True",
+    sms: "True",
+    ens: "True",
+    etgadd: "False",
+    claimedstatus: "False",
+    lastsent: 1678877736662,
   },
 ];
 
@@ -78,38 +131,79 @@ const columns = [
   },
   {
     Header: "Recipient Name",
-    accessor: "recipientName",
+    accessor: "name",
   },
   {
     Header: "Collection",
     accessor: "collection",
   },
   {
-    Header: "Delivery Status",
-    accessor: "deliveryStatus",
+    Header: "Delivery Route",
+    accessor: (row) => {
+      const routes = [];
+      if (row.email === "True") {
+        routes.push("Email");
+      }
+      if (row.sms === "True") {
+        routes.push("SMS");
+      }
+      if (row.ens === "True") {
+        routes.push("ENS");
+      }
+      if (row.etgadd === "True") {
+        routes.push("ETGADD");
+      }
+      return routes.join(", ");
+    },
   },
   {
     Header: "Trigger",
     accessor: "trigger",
   },
   {
-    Header: "Current Status",
-    accessor: "currentStatus",
+    Header: "Claim Status",
+    accessor: "claimedstatus",
     Cell: ({ value }) => (
       <span
         className={
-          value === "Claimed"
-            ? "bg-green-300 p-1 rounded-md"
-            : "bg-pink-200 p-1 rounded-md"
+          value === "True"
+            ? "bg-[#AFFFA2] p-1 px-2 shadow-md text-xs rounded-md"
+            : "bg-[#FFF2E2] p-1 px-2 shadow-md text-xs rounded-md"
         }
       >
-        {value}
+        {value === "True" ? "Claimed" : "Pending"}
       </span>
     ),
   },
+
   {
     Header: "Trigger TimeStamp",
-    accessor: "triggerTimeStamp",
+    accessor: "lastsent",
+    Cell: ({ value }) => {
+      const now = new Date().getTime();
+      const diffInMilliseconds = now - value;
+      const diffInSeconds = Math.floor(diffInMilliseconds / 1000);
+      const diffInMinutes = Math.floor(diffInSeconds / 60);
+      const diffInHours = Math.floor(diffInMinutes / 60);
+      const diffInDays = Math.floor(diffInHours / 24);
+
+      let diffString;
+      if (diffInDays > 0) {
+        diffString = `${diffInDays} day${diffInDays > 1 ? "s" : ""} ago`;
+      } else if (diffInHours > 0) {
+        diffString = `${diffInHours} hour${diffInHours > 1 ? "s" : ""} ago`;
+      } else if (diffInMinutes > 0) {
+        diffString = `${diffInMinutes} minute${
+          diffInMinutes > 1 ? "s" : ""
+        } ago`;
+      } else {
+        diffString = `${diffInSeconds} second${
+          diffInSeconds > 1 ? "s" : ""
+        } ago`;
+      }
+
+      return <span>{diffString}</span>;
+    },
   },
 ];
 
@@ -137,15 +231,79 @@ const Table = () => {
   const numSelectedRows = selectedFlatRows.length;
 
   return (
-    <div>
-      <div className="flex flex-row items-center space-x-5 mb-[1.5rem]">
-        <div className="h-[1.5rem] w-[3.5rem] p-2 flex items-center justify-center text-white bg-blue-500">
+    <div className="mt-[3rem]">
+      <div className="flex flex-row items-center space-x-52 mb-[1.5rem]">
+        <div className="flex flex-row space-x-4">
+          <div className="flex flex-row items-center space-x-2">
+            <p className="text-sm font-poppins">Collection:</p>
+            <div className="flex flex-row space-x-1 items-center">
+              <span className="font-bold text-blue-500 text-xs">All</span>
+              <BiDownArrow className="text-gray-500 text-xs" />
+            </div>
+          </div>
+
+          <div className="flex flex-row items-center space-x-2">
+            <p className="text-sm font-poppins">Delivery Route:</p>
+            <div className="flex flex-row space-x-1 items-center">
+              <span className="font-bold text-blue-500 text-xs">All</span>
+            </div>
+          </div>
+          <div className="flex flex-row items-center space-x-2">
+            <p className="text-sm font-poppins">Trigger:</p>
+            <div className="flex flex-row space-x-1 items-center">
+              <span className="font-bold text-blue-500 text-xs">All</span>
+            </div>
+          </div>
+          <div className="flex flex-row items-center space-x-2">
+            <p className="text-sm font-poppins">Claim Status:</p>
+            <div className="flex flex-row space-x-1 items-center">
+              <span className="font-bold text-blue-500 text-xs">All</span>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row space-x-2 -mt-6">
+          <div>
+            <button className="p-2 bg-[#109CF1] text-white flex flex-row items-center justify-center font-poppins rounded-md drop-shadow-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6 text-white"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Add Leads
+            </button>
+          </div>
+          <div>
+            <button className="p-2 bg-[#109CF1] text-white flex flex-row items-center justify-center font-poppins rounded-md drop-shadow-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6 text-white"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Retarget
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-row items-center space-x-5 mb-[0.25rem] bg-white border-b rounded-md p-1 w-[58rem] border-collapse">
+        <div className="h-[1.5rem] w-[4rem] p-2 flex items-center justify-center rounded-md shadow-md text-white bg-[#109CF1]">
           {numSelectedRows}
         </div>
-        <p className="text-gray-600 font-semibold">
-          {numSelectedRows} Selected
-        </p>
-        <MdDelete className="text-gray-500"/>
+        <p className="text-gray-600 font-poppins">{numSelectedRows} Selected</p>
+        <MdDelete className="text-gray-500" />
       </div>
       <table
         {...getTableProps()}
@@ -157,7 +315,7 @@ const Table = () => {
               {headerGroup.headers.map((column) => (
                 <th
                   {...column.getHeaderProps()}
-                  className="px-4 py-2 text-left text-gray-600 font-semibold border-b"
+                  className="px-4 py-2 text-left text-gray-600 font-poppins text-sm border-b"
                 >
                   {column.render("Header")}
                 </th>
@@ -172,14 +330,14 @@ const Table = () => {
               <tr
                 {...row.getRowProps({
                   style: {
-                    backgroundColor: row.isSelected ? "#d6ffff" : null,
+                    backgroundColor: row.isSelected ? "#E8F6FF" : null,
                   },
                 })}
               >
                 {row.cells.map((cell) => (
                   <td
                     {...cell.getCellProps()}
-                    className=" px-4 py-2 text-gray-600 font-medium"
+                    className=" px-6 py-3 text-gray-600 font-poppins text-sm"
                   >
                     {cell.render("Cell")}
                   </td>

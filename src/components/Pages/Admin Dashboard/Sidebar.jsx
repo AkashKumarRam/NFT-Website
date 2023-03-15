@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Profile from "../../../images/profile_photo.png";
 // import { useNavigate } from "react-router-dom";
 import ArtworkBlue from "../../../images/ArtworkBlue.png";
@@ -15,12 +15,8 @@ import TargetBlue from "../../../images/TargetBlue.png";
 import TargetGray from "../../../images/TargetGray.png";
 import MenuList from "./MenuList";
 
-const Sidebar = () => {
-  const [activeItem, setActiveItem] = useState(null);
-
-  const handleItemClick = (item) => {
-    setActiveItem(item);
-  }
+const Sidebar = ({ menuActive }) => {
+  const [activeItem, setActiveItem] = useState(menuActive);
 
   return (
     <div>
@@ -45,6 +41,7 @@ const Sidebar = () => {
                 graySrc={DashBoardGray}
                 blueSrc={DashBoardBlue}
                 text={"Dashboard"}
+                active={activeItem === "dashboard" ? true : false}
                 toNavigate={"/admin-dashboard"}
               />
             </li>
@@ -53,6 +50,7 @@ const Sidebar = () => {
                 graySrc={TargetGray}
                 blueSrc={TargetBlue}
                 text={"Targeting"}
+                active={activeItem === "targeting" ? true : false}
                 toNavigate={"/targeting"}
               />
             </li>
@@ -60,6 +58,7 @@ const Sidebar = () => {
               <MenuList
                 graySrc={CollectionGray}
                 blueSrc={CollectionBlue}
+                active={activeItem === "collection" ? true : false}
                 text={"Collection"}
                 toNavigate={"/collection"}
               />
@@ -69,6 +68,7 @@ const Sidebar = () => {
                 graySrc={ArtworkGray}
                 blueSrc={ArtworkBlue}
                 text={"Artwork"}
+                active={activeItem === "Artwork" ? true : false}
                 toNavigate={"/artwork"}
               />
             </li>
@@ -77,6 +77,7 @@ const Sidebar = () => {
                 graySrc={IntegrationGray}
                 blueSrc={IntegrationBlue}
                 text={"Integration"}
+                active={activeItem === "Integration" ? true : false}
                 toNavigate={"/integration"}
               />
             </li>
@@ -86,6 +87,7 @@ const Sidebar = () => {
                 <MenuList
                   graySrc={SettingsGray}
                   blueSrc={SettingsBlue}
+                  active={activeItem === "Setting" ? true : false}
                   text={"Settings"}
                   toNavigate={"/settings"}
                 />

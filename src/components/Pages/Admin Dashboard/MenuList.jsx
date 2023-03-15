@@ -1,9 +1,9 @@
-import React, {useState} from "react";
-import {useNavigate} from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const MenuList = ({ graySrc, blueSrc, text, toNavigate }) => {
-    const navigate = useNavigate();
-    const [imgSrc, setImgSrc] = useState(graySrc);
+const MenuList = ({ graySrc, blueSrc, text, toNavigate, active }) => {
+  const navigate = useNavigate();
+  const [imgSrc, setImgSrc] = useState(graySrc);
 
   const handleHover = () => {
     setImgSrc(blueSrc);
@@ -11,17 +11,32 @@ const MenuList = ({ graySrc, blueSrc, text, toNavigate }) => {
 
   const handleLeave = () => {
     setImgSrc(graySrc);
-  }
-
+  };
 
   return (
-    <div className="bg-white hover:bg-blue-100 w-full p-2 flex flex-row items-center rounded-lg" onMouseEnter={handleHover} onMouseLeave={handleLeave}>
-      <img src={imgSrc} alt="dhasboard icon" className="w-6 h-6" />
+    <div
+      className={
+        active
+          ? "bg-blue-100 w-full p-2 flex flex-row items-center rounded-lg"
+          : "bg-white hover:bg-blue-100 w-full p-2 flex flex-row items-center rounded-lg"
+      }
+      onMouseEnter={handleHover}
+      onMouseLeave={handleLeave}
+    >
+      <img
+        src={active ? blueSrc : imgSrc}
+        alt="dhasboard icon"
+        className="w-6 h-6"
+      />
       <span
         onClick={() => navigate(toNavigate)}
-        className="ml-3 font-poppins hover:text-blue-600"
+        className={
+          active
+            ? "ml-3 font-poppins text-blue-600"
+            : "ml-3 font-poppins hover:text-blue-600"
+        }
       >
-      {text}
+        {text}
       </span>
     </div>
   );

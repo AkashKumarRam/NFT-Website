@@ -7,7 +7,7 @@ const AdminDashBoard = () => {
   return (
     <div>
       <Navbar/>
-      <Sidebar/>
+      <Sidebar menuActive="dashboard"/>
     </div>
   );
 };

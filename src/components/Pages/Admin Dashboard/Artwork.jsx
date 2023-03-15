@@ -45,7 +45,7 @@ const Artwork = () => {
       <Navbar />
       <div className="flex flex-row justify-between">
         <div>
-          <Sidebar />
+          <Sidebar menuActive="Artwork" />
         </div>
 
         <div className="flex flex-col items-end w-[calc(100%-16rem)] h-[calc(100%-74px)] mt-2 p-8">

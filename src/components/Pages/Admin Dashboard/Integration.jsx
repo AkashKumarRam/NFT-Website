@@ -36,7 +36,7 @@ const Integration = () => {
           <Sidebar menuActive="Integration" />
         </div>
         <div className=" w-[calc(100%-16rem)] h-[calc(100%-74px)] mt-[4rem]">
-          <div className="h-[30rem] flex flex-col items-end mr-[2rem] p-5 space-y-8">
+          <div className="h-[30rem] flex flex-col items-end mr-[2rem] p-8 space-y-8">
             <button className="p-2 bg-[#109CF1] text-white flex flex-row items-center justify-center space-x-3 font-poppins  rounded-md drop-shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

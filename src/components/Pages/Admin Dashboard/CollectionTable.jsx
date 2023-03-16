@@ -7,7 +7,7 @@ import Collection3 from "../../../images/Collection3.png";
 const data = [
   {
     primaryArtwork: (
-      <img src={Collection1} alt="Artwork" className="h-[5rem]" />
+      <img src={Collection1} alt="Artwork" className="h-[6rem]" />
     ),
     collection_Name: "Wizard and Wolves, Edition 1",
     ticker: "WAW",
@@ -17,7 +17,7 @@ const data = [
   },
   {
     primaryArtwork: (
-      <img src={Collection3} alt="Artwork" className="h-[5rem]" />
+      <img src={Collection3} alt="Artwork" className="h-[6rem]" />
     ),
     collection_Name: "Wizard and Wolves, Edition 2",
     ticker: "WAW",
@@ -27,7 +27,7 @@ const data = [
   },
   {
     primaryArtwork: (
-      <img src={Collection2} alt="Artwork" className="h-[5rem]" />
+      <img src={Collection2} alt="Artwork" className="h-[6rem]" />
     ),
     collection_Name: "Wizard and Wolves, Edition 3",
     ticker: "WAW",
@@ -95,7 +95,7 @@ const CollectionTable = () => {
     tableInstance;
 
   return (
-    <div className="bg-white shadow-lg w-[62rem] flex flex-col items-end">
+    <div className="bg-white shadow-lg w-auto rounded-xl flex flex-col">
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (
@@ -103,7 +103,7 @@ const CollectionTable = () => {
               {headerGroup.headers.map((column) => (
                 <th
                   {...column.getHeaderProps()}
-                  className="px-8 py-4 font-poppins text-xs text-gray-700 text-start border-b-[1px] border-gray-100"
+                  className="px-[2.5rem] py-4 font-poppins text-xs text-gray-700 text-start border-b-[1px] border-gray-100"
                 >
                   {column.render("Header")}
                 </th>
@@ -119,7 +119,7 @@ const CollectionTable = () => {
                 {row.cells.map((cell) => (
                   <td
                     {...cell.getCellProps()}
-                    className="px-10 py-3 font-poppins text-xs text-gray-700 border-b-[1px] border-gray-100"
+                    className="px-10 py-4 font-poppins text-xs text-gray-700 border-b-[1px] border-gray-100"
                   >
                     {cell.render("Cell")}
                   </td>

@@ -231,9 +231,9 @@ const Table = () => {
   const numSelectedRows = selectedFlatRows.length;
 
   return (
-    <div className="mt-[3rem]">
+    <div className="p-6">
       <div className="flex flex-row items-center space-x-52 mb-[1.5rem]">
-        <div className="flex flex-row space-x-4">
+        <div className="flex flex-row space-x-[2rem]">
           <div className="flex flex-row items-center space-x-2">
             <p className="text-sm font-poppins">Collection:</p>
             <div className="flex flex-row space-x-1 items-center">
@@ -263,7 +263,7 @@ const Table = () => {
         </div>
         <div className="flex flex-row space-x-2 -mt-6">
           <div>
-            <button className="p-2 bg-[#109CF1] text-white flex flex-row items-center justify-center font-poppins rounded-md drop-shadow-md">
+            <button className="p-3 bg-[#109CF1] text-white flex flex-row items-center justify-end font-poppins rounded-md drop-shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -276,11 +276,11 @@ const Table = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-              Add Leads
+              <p>Add Leads</p>
             </button>
           </div>
           <div>
-            <button className="p-2 bg-[#109CF1] text-white flex flex-row items-center justify-center font-poppins rounded-md drop-shadow-md">
+            <button className="p-3 bg-[#109CF1] text-white flex flex-row items-center justify-end font-poppins rounded-md drop-shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

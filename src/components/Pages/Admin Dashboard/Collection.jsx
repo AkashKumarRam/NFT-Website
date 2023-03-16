@@ -5,15 +5,15 @@ import Sidebar from "./Sidebar";
 
 const Collection = () => {
   return (
-    <div className="bg-[#F8FAFF]">
+    <div className="bg-[#F8FAFF] h-[100vh]">
       <Navbar />
       <div className="flex flex-row justify-between">
         <div>
           <Sidebar menuActive="collection" />
         </div>
-        <div className=" w-[calc(100%-16rem)] h-[calc(100%-74px)] flex flex-col items-end mt-12 pr-8 space-y-4">
+        <div className=" w-[calc(100%-16rem)] h-[calc(100vh-74px)] flex flex-col items-end p-8 space-y-4 mt-2">
           <div>
-            <button className="p-2 bg-[#109CF1] text-white flex flex-row space-x-3 font-poppins  rounded-md drop-shadow-md">
+            <button className="p-3 bg-[#109CF1] text-white flex flex-row space-x-3 font-poppins rounded-md drop-shadow-md">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -29,7 +29,7 @@ const Collection = () => {
               <p>Add Collection</p>
             </button>
           </div>
-          <div className="mt-[4rem] ml-[4rem]">
+          <div>
             <CollectionTable />
           </div>
         </div>

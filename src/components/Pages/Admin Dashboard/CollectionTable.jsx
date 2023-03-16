@@ -103,7 +103,7 @@ const CollectionTable = () => {
               {headerGroup.headers.map((column) => (
                 <th
                   {...column.getHeaderProps()}
-                  className="px-[2.5rem] py-4 font-poppins text-xs text-gray-700 text-start border-b-[1px] border-gray-100"
+                  className="px-10 py-4 font-poppins text-xs text-gray-700 text-start border-b-[1px] border-gray-100"
                 >
                   {column.render("Header")}
                 </th>

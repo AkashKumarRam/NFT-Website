@@ -124,7 +124,7 @@ const Targeting = () => {
         <div>
           <Sidebar menuActive="targeting" />
         </div>
-        <div className="w-[calc(100%-16rem)] h-[calc(100vh-74px)] mt-2">
+        <div className="w-[calc(100%-16rem)] h-[calc(100%-74px)] mt-2">
           <div className="p-6 mt-3">
             <Table />
           </div>

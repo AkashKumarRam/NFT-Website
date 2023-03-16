@@ -74,7 +74,7 @@ const Artwork = () => {
             />
           </div>
 
-          <div className="flex flex-wrap gap-x-[4rem] gap-y-[2rem] mt-[2rem] items-end mr-[2rem]">
+          <div className="flex flex-wrap gap-x-[4rem] gap-y-[2rem] mt-[2rem] items-end ml-10 mr-[2rem]">
             {nftData.map((data, index) => {
               return (
                 <NftCard id={data.id} imgSrc={data.imgsrc} mint={data.mint} />

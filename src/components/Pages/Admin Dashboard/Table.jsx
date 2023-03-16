@@ -307,7 +307,7 @@ const Table = () => {
       </div>
       <table
         {...getTableProps()}
-        className="table-auto bg-white shadow-lg rounded-lg overflow-hidden border-collapse"
+        className="table-auto w-full bg-white shadow-lg rounded-lg overflow-hidden border-collapse"
       >
         <thead>
           {headerGroups.map((headerGroup) => (

@@ -37,7 +37,7 @@ const Integration = () => {
         </div>
         <div className=" w-[calc(100%-16rem)] h-[calc(100%-74px)] mt-[2rem]">
           <div className="h-[30rem] flex flex-col items-end mr-[2rem] ml-[2rem] p-8 space-y-8">
-            <button className="p-2 bg-[#109CF1] text-white flex flex-row items-center justify-center space-x-3 font-poppins  rounded-md drop-shadow-md">
+            <button className="p-3 bg-[#109CF1] text-white flex flex-row items-center justify-center space-x-3 font-poppins  rounded-md drop-shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -55,7 +55,7 @@ const Integration = () => {
               <p>Generate New Key</p>
             </button>
 
-            <div className="mt-[6rem] p-5 w-auto h-[30rem] bg-white drop-shadow-lg flex flex-col space-y-6">
+            <div className="mt-[6rem] p-5 w-auto h-[30rem] bg-white rounded-xl drop-shadow-lg flex flex-col space-y-6">
               <p className="font-poppins text-sm">
                 API Key based NFT Drop is easiest way for any business to
                 leverage on NFT Marketing without the requirement of a

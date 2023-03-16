@@ -232,7 +232,7 @@ const Table = () => {
 
   return (
     <div className="p-6">
-      <div className="flex flex-row items-center space-x-52 mb-[1.5rem]">
+      <div className="flex flex-row items-center space-x-52 mb-[1.5rem] w-full">
         <div className="flex flex-row space-x-[2rem]">
           <div className="flex flex-row items-center space-x-2">
             <p className="text-sm font-poppins">Collection:</p>
@@ -298,7 +298,7 @@ const Table = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row items-center space-x-5 mb-[0.25rem] bg-white border-b rounded-md p-1 w-[62rem] border-collapse">
+      <div className="flex flex-row items-center space-x-5 mb-[0.25rem] bg-white border-b rounded-md p-1 w-[100vw-24px] border-collapse">
         <div className="h-[1.5rem] w-[4rem] p-2 flex items-center justify-center rounded-md shadow-md text-white bg-[#109CF1]">
           {numSelectedRows}
         </div>

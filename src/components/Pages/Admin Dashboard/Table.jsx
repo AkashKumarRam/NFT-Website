@@ -232,7 +232,7 @@ const Table = () => {
 
   return (
     <div className="p-6">
-      <div className="flex flex-row items-center space-x-52 mb-[1.5rem] w-full">
+      <div className="flex flex-row items-center space-x-52 mb-[1.5rem] w-[100vw-24px]">
         <div className="flex flex-row space-x-[2rem]">
           <div className="flex flex-row items-center space-x-2">
             <p className="text-sm font-poppins">Collection:</p>

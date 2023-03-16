@@ -35,8 +35,8 @@ const Integration = () => {
         <div>
           <Sidebar menuActive="Integration" />
         </div>
-        <div className=" w-[calc(100%-16rem)] h-[calc(100%-74px)] mt-[4rem]">
-          <div className="h-[30rem] flex flex-col items-end mr-[2rem] p-8 space-y-8">
+        <div className=" w-[calc(100%-16rem)] h-[calc(100%-74px)] mt-[2rem]">
+          <div className="h-[30rem] flex flex-col items-end mr-[2rem] ml-[2rem] p-8 space-y-8">
             <button className="p-2 bg-[#109CF1] text-white flex flex-row items-center justify-center space-x-3 font-poppins  rounded-md drop-shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,17 +56,17 @@ const Integration = () => {
             </button>
 
             <div className="mt-[6rem] p-5 w-auto h-[30rem] bg-white drop-shadow-lg flex flex-col space-y-6">
-              <p className="font-poppins text-xs">
-                API key based NFT dRop it easiest way for any business to
-                leaverage on nFT marketing without the requirement of a
-                bloackchain developer. It is powered by simple RESTful API
-                Endpoints that business cna use in their product flow.
+              <p className="font-poppins text-sm">
+                API Key based NFT Drop is easiest way for any business to
+                leverage on NFT Marketing without the requirement of a
+                Blockchain Developer. It is powered by Simple RESTful API
+                Endpoints that businesses can use in their product flow.
               </p>
               <div className="w-full flex flex-col items-start space-y-3">
                 <h2 className="font-poppins text-xl">Demo API key</h2>
-                <p className="font-poppins text-xs">
-                  Demo API key is on aPI key linked for demo nFT drop with
-                  limited funvtionalit and Copping in number of allowed calls.
+                <p className="font-poppins text-sm">
+                  Demo API Key is an API Key Linked for Demo NFT Drop with
+                  Limited Functionality and Capping in number of allowed calls.
                 </p>
                 <div className="w-full flex flex-row items-center">
                   <input
@@ -102,10 +102,10 @@ const Integration = () => {
               </div>
               <div className="w-full flex flex-col items-start space-y-3">
                 <h2 className="font-poppins text-xl">Production API key</h2>
-                <p className="font-poppins text-xs">
-                  Production API key is on API key linked to accounts with
+                <p className="font-poppins text-sm">
+                  Production API Key is an API Key Linked to accounts with
                   activated plans with full-fledged assigned functionality to
-                  the plN
+                  the plan.
                 </p>
                 <div className="w-full flex flex-row items-center">
                   <input

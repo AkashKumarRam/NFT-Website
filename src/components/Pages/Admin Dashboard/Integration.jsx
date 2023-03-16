@@ -55,7 +55,7 @@ const Integration = () => {
               <p>Generate New Key</p>
             </button>
 
-            <div className="mt-[6rem] p-5 w-auto h-[30rem] bg-white rounded-xl drop-shadow-lg flex flex-col space-y-6">
+            <div className="mt-[6rem] p-8 w-auto h-[30rem] bg-white rounded-xl drop-shadow-lg flex flex-col space-y-6">
               <p className="font-poppins text-sm">
                 API Key based NFT Drop is easiest way for any business to
                 leverage on NFT Marketing without the requirement of a

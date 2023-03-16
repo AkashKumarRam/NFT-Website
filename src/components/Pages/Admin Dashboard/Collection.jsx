@@ -29,7 +29,7 @@ const Collection = () => {
               <p>Add Collection</p>
             </button>
           </div>
-          <div>
+          <div className="w-full">
             <CollectionTable />
           </div>
         </div>

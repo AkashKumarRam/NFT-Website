@@ -95,7 +95,7 @@ const CollectionTable = () => {
     tableInstance;
 
   return (
-    <div className="bg-white shadow-lg w-auto rounded-xl flex flex-col">
+    <div className="bg-white shadow-lg w-full rounded-xl flex flex-col">
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (

@@ -36,7 +36,7 @@ const Integration = () => {
           <Sidebar menuActive="Integration" />
         </div>
         <div className=" w-[calc(100%-16rem)] h-[calc(100%-74px)] mt-[4rem]">
-          <div className="h-[28rem] flex flex-col items-end mr-[6rem] space-y-8">
+          <div className="h-[30rem] flex flex-col items-end mr-[2rem] p-5 space-y-8">
             <button className="p-2 bg-[#109CF1] text-white flex flex-row items-center justify-center space-x-3 font-poppins  rounded-md drop-shadow-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const Integration = () => {
               <p>Generate New Key</p>
             </button>
 
-            <div className="mt-[6rem]  p-5 w-[58rem] h-[30rem] bg-white drop-shadow-lg flex flex-col space-y-6">
+            <div className="mt-[6rem] p-5 w-auto h-[30rem] bg-white drop-shadow-lg flex flex-col space-y-6">
               <p className="font-poppins text-xs">
                 API key based NFT dRop it easiest way for any business to
                 leaverage on nFT marketing without the requirement of a

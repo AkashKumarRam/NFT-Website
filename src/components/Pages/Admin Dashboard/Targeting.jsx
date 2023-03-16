@@ -118,7 +118,7 @@ const userData = [
 
 const Targeting = () => {
   return (
-    <div>
+    <div className="bg-[#F8FAFF]">
       <Navbar />
       <div className="flex flex-row justify-between">
         <div>

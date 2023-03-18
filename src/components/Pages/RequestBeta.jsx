@@ -88,7 +88,7 @@ const RequestBeta = () => {
         <div className="mt-[2rem] max-sm:items-start max-sm:w-screen max-sm:pl-5 max-sm:pr-5">
           <h1 className="font-bold text-2xl font-poppins">Request For Beta</h1>
           <p className="text-sm text-gray-400 font-poppins">
-            If you will get selected you will get chance.
+            If selected you get 6 Months Business Subscription Plan for Free
           </p>
         </div>
         <div className="mt-5 flex flex-col space-y-4 ">
@@ -100,6 +100,19 @@ const RequestBeta = () => {
               type="text"
               className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[22rem]"
             />
+          </div>
+          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
+            <label className="text-black text-md font-poppins cursor-pointer">
+              Type of Business
+            </label>
+            <Select options={options} styles={customStyles} />
+          </div>
+
+          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
+            <label className="text-black text-md font-poppins cursor-pointer">
+              Funding Status
+            </label>
+            <Select options={options2} styles={customStyles} />
           </div>
           <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
             <label className="text-black text-md font-poppins cursor-pointer">
@@ -120,24 +133,10 @@ const RequestBeta = () => {
               className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[22rem]"
             />
           </div>
-
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
-            <label className="text-black text-md font-poppins cursor-pointer">
-              Type of Business
-            </label>
-            <Select options={options} styles={customStyles} />
-          </div>
-
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
-            <label className="text-black text-md font-poppins cursor-pointer">
-              Funding Status
-            </label>
-            <Select options={options2} styles={customStyles} />
-          </div>
         </div>
 
-        <button class="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[22rem]">
-          LOGIN
+        <button className="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[22rem]">
+          Request Beta
         </button>
       </div>
     </div>

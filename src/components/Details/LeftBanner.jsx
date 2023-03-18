@@ -28,7 +28,7 @@ const LeftBanner = () => {
           {BoxImage[index].title}
         </h1>
         <img
-          className="h-[12rem] mt-4"
+          className="h-[14rem] mt-4"
           src={BoxImage[index].image}
           alt={BoxImage[index].title}
         />

@@ -10,11 +10,11 @@ const HeaderLeft = () => {
   return (
     <div className="mt-28 ml-24 main-header-left max-sm:flex max-sm:items-center max-sm:justify-center max-sm:mt-16 max-sm:ml-0 max-sm:space-y-5">
       <h2 className="font-header text-indigo-700 text-3xl nft-text">
-        NFT Life-Cycle Management Platform
+        No-Code NFT Management Platform
       </h2>
       <h1 className="font-body text-6xl main-text max-sm:text-3xl">
-        Use NFT-Driven Customer <br />
-        Engagement - at scale
+        Use No-Code NFT API <br />
+        to drive engagement
       </h1>
       <div className="max-sm:hidden">
         <p className="font-hero text-indigo-600 mt-4 text-lg sub-text max-sm:ml-11">
@@ -49,7 +49,7 @@ const HeaderLeft = () => {
           Request for Beta
         </button>
       </div>
-      <p className="text-black text-[0.8rem]">Join Waiting list</p>
+      <p className="text-black text-[0.8rem]">No credit card needed</p>
 
       {/* <p className='mt-6 font-hero underline underline-offset-4 text-sm text-indigo-600 cursor-pointer demo'>Request Demo</p> */}
       {/* <div className="mt-[2rem]">

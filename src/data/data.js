@@ -23,31 +23,31 @@ const Row2 = [Image7, Image8, Image9, Image10, Image11, Image12,Image7, Image8, 
 
 const BoxImage = [
     {
-        title: "Digital Twin",
+        title: "Sign Up Reward",
         image: Image1,
     },
     {
-        title: "Digital Twin",
+        title: "Verfied Proof",
         image: Image2,
     },
     {
-        title: "Digital Twin",
+        title: "Loyalty Reward",
         image: Image3,
     },
     {
-        title: "Digital Twin",
+        title: "Phygital Fashion",
         image: Image4,
     },
     {
-        title: "Digital Twin",
+        title: "Community Reward",
         image: Image5,
     },
     {
-        title: "Digital Twin",
+        title: "EdTech Certificate",
         image: Image6,
     },
     {
-        title: "Digital Twin",
+        title: "Product Invoice",
         image: Image7,
     },
     {
@@ -59,31 +59,31 @@ const BoxImage = [
         image: Image9,
     },
     {
-        title: "Proof of Attendence",
+        title: "Conference Reward",
         image: Image10,
     },
     {
-        title: "Digital Twin",
+        title: "Limited Collection",
         image: Image11,
     },
     {
-        title: "Tournament Win",
+        title: "Betting Card",
         image: Image12,
     },
     {
-        title: "Digital Twin",
+        title: "Movie IP",
         image: Image13,
     },
     {
-        title: "Digital Twin",
+        title: "Music IP",
         image: Image14,
     },
     {
-        title: "Digital Twin",
+        title: "Access Ticket",
         image: Image15,
     },
     {
-        title: "Digital Twin",
+        title: "Legal Contract",
         image: Image16,
     },
 ]

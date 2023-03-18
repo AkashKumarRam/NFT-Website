@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function MobileMenu() {
   const navigate = useNavigate();
@@ -39,30 +39,47 @@ function MobileMenu() {
             aria-labelledby="options-menu"
           >
             <p
-             onClick={() => navigate('/casestudies')}
+              onClick={() => navigate("/casestudies")}
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               role="menuitem"
             >
               Case studies
             </p>
-            <p
+            {/* <p
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               role="menuitem"
             >
               API Documentation
-            </p>
+            </p> */}
             <p
-             onClick={() => navigate('/pricing')}
+              onClick={() => navigate("/pricing")}
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               role="menuitem"
             >
               Pricing
             </p>
-            <Link to='form' spy={true} smooth={true} offset={10} duration={400} className="block w-full px-4 py-2 mt-2 text-sm font-medium border-[#2F3FD4] rounded-md border-2 p-2 text-[#2F3FD4] font-body">
+
+            {/* <Link
+              to="form"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={400}
+              className="block w-full px-4 py-2 mt-2 text-sm font-medium border-[#2F3FD4] rounded-md border-2 p-2 text-[#2F3FD4] font-body"
+            >
               Contact Sales
             </Link>
-            <button onClick={() => navigate('/signup')} className="block w-full px-4 py-2 mt-2 text-sm font-medium border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-28">
+            <button
+              onClick={() => navigate("/signup")}
+              className="block w-full px-4 py-2 mt-2 text-sm font-medium border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-28"
+            >
               Sign Up
+            </button> */}
+            <button
+              onClick={() => navigate('/requestbeta')}
+              className="block w-full px-4 py-2 mt-2 text-sm font-medium border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-28"
+            >
+              Request for Beta
             </button>
           </div>
 

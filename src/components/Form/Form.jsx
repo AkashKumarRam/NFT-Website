@@ -1,10 +1,15 @@
 import React from "react";
 import Vector from "../../images/Vector.png";
 import "../Form/Form.css";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
+  const navigate = useNavigate();
   return (
-    <div className="p-5 mt-16 max-sm:flex max-sm:items-center max-sm:justify-center" id="form">
+    <div
+      className="p-5 mt-16 max-sm:flex max-sm:items-center max-sm:justify-center"
+      id="form"
+    >
       <div className="flex flex-row items-center space-x-20 justify-center max-sm:space-x-0 max-sm:items-center max-sm:justify-center">
         <img
           src={Vector}
@@ -64,6 +69,7 @@ const Form = () => {
               </label>
             </div>
             <button
+              onClick={() => navigate("/requestbeta")}
               type="submit"
               className="bg-[#333215] text-white py-2 px-4 rounded-sm"
             >

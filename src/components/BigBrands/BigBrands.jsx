@@ -38,7 +38,7 @@ const BigBrands = () => {
 
   return (
     <>
-      <div className="mt-28 flex items-center justify-between max-sm:mt-[-5rem] max-sm:flex-col">
+      <div className="mt-28 flex items-center justify-between max-sm:mt-[-1rem] max-sm:flex-col">
         <div className="flex items-center justify-center  leading-10 p-20 bg-[#2F3FD4] w-1/2 max-sm:w-full max-sm:rounded-none max-sm:h-20 max-sm:p-4  rounded-r-3xl rounded-br-3xl">
           <h2 className="text-5xl font-body text-white max-sm:text-[1.3rem]">
             Big brands are already using NFTs

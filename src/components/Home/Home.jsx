@@ -36,7 +36,7 @@ const Home = () => {
       {isLargeScreen ? <BigBrands /> : <MainBanner />}
       <Features/>
       <KeyPoints/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
       <BrandDetails/>
       <Form/>
       <Footer/>

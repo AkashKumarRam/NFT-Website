@@ -30,6 +30,7 @@ import ArtWork from "./components/Pages/Admin Dashboard/Artwork";
 import Integration from "./components/Pages/Admin Dashboard/Integration";
 import Settings from "./components/Pages/Admin Dashboard/Settings";
 import Targeting from "./components/Pages/Admin Dashboard/Targeting";
+import RequestBeta from "./components/Pages/RequestBeta";
 
 function App() {
   // const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -73,7 +74,7 @@ function App() {
         <Route path="/integration" element={<Integration/>} />
         <Route path="/settings" element={<Settings/>} />
         <Route path="/targeting" element={<Targeting/>} />
-        
+        <Route path="/requestbeta" element={<RequestBeta/>} />
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

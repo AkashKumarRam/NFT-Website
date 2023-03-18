@@ -116,7 +116,7 @@ const RequestBeta = () => {
               Phone Number (POC)
             </label>
             <input
-              type="number"
+              type="text"
               className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[22rem]"
             />
           </div>

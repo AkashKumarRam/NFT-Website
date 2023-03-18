@@ -8,11 +8,11 @@ const HeaderLeft = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="mt-28 ml-24 main-header-left max-sm:flex max-sm:items-center max-sm:justify-center max-sm:mt-16 max-sm:ml-0 max-sm:space-y-5">
-      <h2 className="font-header text-indigo-700 text-3xl nft-text">
-        No-Code NFT Management Platform
+    <div className="mt-28 ml-24 main-header-left max-sm:flex max-sm:items-center max-sm:justify-center max-sm:mt-16 max-sm:ml-0">
+      <h2 className="font-header text-indigo-700 text-3xl nft-text max-sm:text-2xl">
+        No-Code NFT Management
       </h2>
-      <h1 className="font-body text-6xl main-text max-sm:text-3xl">
+      <h1 className="font-body text-6xl main-text max-sm:text-3xl max-sm:mt-[-1rem]">
         Use No-Code NFT API <br />
         to drive engagement
       </h1>
@@ -26,7 +26,7 @@ const HeaderLeft = () => {
 
       {/* For Mobile */}
       <div className="sm:hidden mb-14">
-        <p className="font-hero text-indigo-600 mt-4 text-sm text-center">
+        <p className="font-hero text-indigo-600 -mt-2 text-sm text-center">
           Leverage NFTs to transform customer engagement and establish a
           powerful community-driven brand presence
         </p>
@@ -49,7 +49,7 @@ const HeaderLeft = () => {
           Request for Beta
         </button>
       </div>
-      <p className="text-black text-[0.8rem]">No credit card needed</p>
+      <p className="text-black text-[0.8rem] max-sm:mt-[-1rem]">No credit card needed</p>
 
       {/* <p className='mt-6 font-hero underline underline-offset-4 text-sm text-indigo-600 cursor-pointer demo'>Request Demo</p> */}
       {/* <div className="mt-[2rem]">

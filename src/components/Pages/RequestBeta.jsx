@@ -42,7 +42,7 @@ const options2 = [
 const customStyles = {
   control: (provided) => ({
     ...provided,
-    width: "22rem",
+    width: "20rem",
     height: "2.5rem",
     borderRadius: "6px",
     border: "1px solid black",
@@ -98,10 +98,10 @@ const RequestBeta = () => {
             </label>
             <input
               type="text"
-              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[22rem]"
+              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
             />
           </div>
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
+          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5 max-sm:w-[20rem]">
             <label className="text-black text-md font-poppins cursor-pointer">
               Type of Business
             </label>
@@ -114,13 +114,13 @@ const RequestBeta = () => {
             </label>
             <Select options={options2} styles={customStyles} />
           </div>
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
+          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5 ">
             <label className="text-black text-md font-poppins cursor-pointer">
               Email (POC)
             </label>
             <input
               type="email"
-              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[22rem]"
+              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
             />
           </div>
 
@@ -130,12 +130,12 @@ const RequestBeta = () => {
             </label>
             <input
               type="text"
-              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[22rem]"
+              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
             />
           </div>
         </div>
 
-        <button className="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[22rem]">
+        <button className="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[20rem]">
           Request Beta
         </button>
       </div>

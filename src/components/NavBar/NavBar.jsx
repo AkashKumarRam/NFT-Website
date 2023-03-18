@@ -14,7 +14,7 @@ const NavBar = () => {
   const navigate = useNavigate();
   return (
     <nav className="flex items-center justify-between w-full h-[74px] relative z-[2] main-nav pr-10 pl-10">
-      <div className="flex gap-3 cursor-pointer main-logos">
+      <div className="flex gap-3 cursor-pointer main-logos max-sm:ml-[-1rem]">
         <img
           onClick={() => navigate("/")}
           className="h-8"

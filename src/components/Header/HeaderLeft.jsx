@@ -44,9 +44,9 @@ const HeaderLeft = () => {
         </button> */}
         <button
           onClick={() => navigate("/requestbeta")}
-          className="border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-[10rem]"
+          className="border-[#2F3FD4] rounded-md border-2 p-2 bg-[#2F3FD4] text-white w-[12rem]"
         >
-          Request for Beta
+          Request for Beta Access
         </button>
       </div>
       <p className="text-black text-[0.8rem] max-sm:mt-[-1rem]">No credit card needed</p>

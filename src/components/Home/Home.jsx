@@ -11,6 +11,8 @@ import Testimonial from "../Testimonials/Testimonial";
 import TrustedPartners from "../TrustedPartners/TrustedPartners";
 import Form from "../Form/Form";
 import Footer from "../Footer/Footer";
+// import FaqBox from "../Pages/PricingList/FaqBox";
+import HomeFaq from './HomeFaq.jsx';
 
 const Home = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -39,6 +41,7 @@ const Home = () => {
       {/* <Testimonial/> */}
       <BrandDetails/>
       <Form/>
+      <HomeFaq/>
       <Footer/>
     </div>
   )

@@ -31,6 +31,11 @@ import Integration from "./components/Pages/Admin Dashboard/Integration";
 import Settings from "./components/Pages/Admin Dashboard/Settings";
 import Targeting from "./components/Pages/Admin Dashboard/Targeting";
 import RequestBeta from "./components/Pages/RequestBeta";
+import PepsiArticle from "./components/Pages/Articles/PepsiArticle";
+import AdidasArticle from "./components/Pages/Articles/AdidasArticle";
+import NikeArticle from "./components/Pages/Articles/NikeArticle";
+import OdysseyArticle from "./components/Pages/Articles/OdysseyArticle";
+import StreetArtArticle from "./components/Pages/Articles/StreetArtArticle";
 
 function App() {
   // const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -58,6 +63,11 @@ function App() {
         <Route path="/" element={ <Home/> } />
         <Route path="/casestudies" element={<CaseStudies/>} />
         <Route path="/casestudydetail-cococola" element={<Articles/>} />
+        <Route path="/casestudydetail-pepsi" element={<PepsiArticle/>} />
+        <Route path="/casestudydetail-adidas" element={<AdidasArticle/>} />
+        <Route path="/casestudydetail-nike" element={<NikeArticle/>} />
+        <Route path="/casestudydetail-starbucks" element={<OdysseyArticle/>} />
+        <Route path="/casestudydetail-streetart" element={<StreetArtArticle/>} />
         <Route path="/pricing" element={<Pricing/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/login" element={<Login/>} />

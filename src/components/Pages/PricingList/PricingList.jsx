@@ -12,7 +12,7 @@ const PricingList = () => {
       </div>
 
       {/* Pricing */}
-      <div className="mt-16 pl-10 pr-10 space-x-3 flex flex-row justify-center max-sm:flex max-sm:items-center max-sm:justify-center max-sm:flex-col max-sm:space-y-5">
+      <div className="mt-16 pl-10 pr-10 space-x-3 flex max-sm:space-x-0 flex-row justify-center max-sm:flex max-sm:items-center max-sm:justify-center max-sm:flex-col max-sm:space-y-5 max-sm:pl-3 max-sm:pr-3">
         <div className="border-2 h-fit rounded-3xl border-slate-900 space-y-10 p-5 pb-8">
           <div className="space-y-2">
             <h3 className="font-inter text-4xl font-bold">Professional</h3>
@@ -48,11 +48,12 @@ const PricingList = () => {
         </div>
 
         {/* Second Pricing List */}
-        <div className="border-2 h-fit rounded-3xl border-slate-900 space-y-10 p-5 pb-8">
+        <div className="border-2 h-fit rounded-3xl border-slate-900 space-y-10 p-5 pb-8 ">
           <div className="space-y-2">
             <h3 className="font-inter text-4xl font-bold">Business</h3>
             <p className="font-inter text-md">
-            Level up your NFT Marketing workflow with simple APIs integrated in your product journey
+              Level up your NFT Marketing workflow with simple APIs integrated
+              in your product journey
             </p>
           </div>
 
@@ -65,7 +66,9 @@ const PricingList = () => {
           <div className="space-y-5">
             <ul className="space-y-3">
               <li className="font-intermedium">&#10003; 3 NFT Collection</li>
-              <li className="font-intermedium">&#10003; 1500 NFT Distribution</li>
+              <li className="font-intermedium">
+                &#10003; 1500 NFT Distribution
+              </li>
               <li className="font-intermedium">&#10003; Unlimited API Calls</li>
               <li className="font-intermedium">
                 &#10003; Full Access to Artwork Library
@@ -74,9 +77,15 @@ const PricingList = () => {
               <li className="font-intermedium">
                 &#10003; Customized NFT-Level Metadata
               </li>
-              <li>&#10003; 1 Free Creative Consultation</li>
-              <li>&#10003; Advanced Analytics Dashboard</li>
-              <li>&#10003; Access IRL Airdrop Mobile App</li>
+              <li className="font-intermedium">
+                &#10003; 1 Free Creative Consultation
+              </li>
+              <li className="font-intermedium">
+                &#10003; Advanced Analytics Dashboard
+              </li>
+              <li className="font-intermedium">
+                &#10003; Access IRL Airdrop Mobile App
+              </li>
             </ul>
             <button className="font-inter font-bold border-2 text-center rounded-md h-12 bg-[#F21C1C] text-white w-full">
               Buy Plan
@@ -89,7 +98,8 @@ const PricingList = () => {
           <div className="space-y-2">
             <h3 className="font-inter text-4xl font-bold">Enterprise+</h3>
             <p className="font-inter text-md">
-            Level up your NFT Marketing workflow with simple APIs integrated in your product journey
+              Level up your NFT Marketing workflow with simple APIs integrated
+              in your product journey
             </p>
           </div>
 
@@ -102,23 +112,37 @@ const PricingList = () => {
 
           <div className="space-y-5">
             <ul className="space-y-3">
-              <li className="font-intermedium">&#10003; Custom Capped NFT Collection</li>
-              <li className="font-intermedium">&#10003; Unlimited NFT Distribution</li>
+              <li className="font-intermedium">
+                &#10003; Custom Capped NFT Collection
+              </li>
+              <li className="font-intermedium">
+                &#10003; Unlimited NFT Distribution
+              </li>
               <li className="font-intermedium">&#10003; Unlimited API Calls</li>
               <li className="font-intermedium">
                 &#10003; Full Access to Artwork Library
               </li>
-              <li className="font-intermedium">&#10003; Unlimted user license</li>
+              <li className="font-intermedium">
+                &#10003; Unlimted user license
+              </li>
               <li className="font-intermedium">
                 &#10003; Customized NFT-Level Metadata
               </li>
-              <li>&#10003; 10 Free Creative Consultation</li>
-              <li>&#10003; Advanced Analytics Dashboard</li>
-              <li>&#10003; Access IRL Airdrop Mobile App</li>
-              <li>&#10003; Additional Custom Metadata</li>
+              <li className="font-intermedium">
+                &#10003; 10 Free Creative Consultation
+              </li>
+              <li className="font-intermedium">
+                &#10003; Advanced Analytics Dashboard
+              </li>
+              <li className="font-intermedium">
+                &#10003; Access IRL Airdrop Mobile App
+              </li>
+              <li className="font-intermedium">
+                &#10003; Additional Custom Metadata
+              </li>
             </ul>
             <button className="font-inter font-bold border-2 text-center rounded-md h-12 bg-[#141414] text-white w-full">
-            Contact Sales
+              Contact Sales
             </button>
           </div>
         </div>

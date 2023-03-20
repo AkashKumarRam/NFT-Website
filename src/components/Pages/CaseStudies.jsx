@@ -1,12 +1,18 @@
 import React from 'react'
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
+import AdidasCaseStudy from './CaseStudies/AdidasCaseStudy';
 import CaseStudy from './CaseStudies/CaseStudy';
+import NikeCaseStudies from './CaseStudies/NikeCaseStudies';
+import OdssyCaseStudy from './CaseStudies/OdssyCaseStudy';
+import PepsiCaseStudy from './CaseStudies/PepsiCaseStudy';
+import StreetArtCaseStudy from './CaseStudies/StreetArtCaseStudy';
 
 const CaseStudies = () => {
   return (
     <div>
         <NavBar/>
+        <div className='bg-[#FEFEFF]'>
         <div className='flex justify-center mt-14 max-sm:hidden'>
             <h1 className='font-body text-4xl'>NFT Marketing Case-Studies</h1>
         </div>
@@ -16,9 +22,12 @@ const CaseStudies = () => {
         </div>
         <div className='max-sm:space-y-5'>
         <CaseStudy/>
-        <CaseStudy/>
-        <CaseStudy/>
-        <CaseStudy/>
+        <PepsiCaseStudy/>
+        <AdidasCaseStudy/>
+        <NikeCaseStudies/>
+        <OdssyCaseStudy/>
+        <StreetArtCaseStudy/>
+        </div>
         </div>
         <Footer/>
     </div>

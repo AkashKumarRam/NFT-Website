@@ -21,7 +21,7 @@ const AdidasCaseStudy = () => {
             <div className="flex flex-row items-center space-x-2">
               {/* <img className="w-28" src={Eye} alt="eyeImage" /> */}
               <AiFillEye />
-              <p>144k</p>
+              <p>130k</p>
             </div>
             <p className="font-settings -mr-6 ">Read Full</p>
           </div>
@@ -56,7 +56,7 @@ const AdidasCaseStudy = () => {
                 />
               </svg>
 
-              <p className="text-lg">144k</p>
+              <p className="text-lg">130k</p>
             </div>
           </div>
           <p className="font-settings text-xl relative left-28">Read Full</p>

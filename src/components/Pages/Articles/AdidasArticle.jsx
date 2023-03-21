@@ -1,17 +1,20 @@
-import React from "react";
+import React,{useEffect} from "react";
 import AdidasBanner from "../../../images/AdidasBanner.png";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 
 const AdidasArticle = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div>
       <NavBar />
       <div className="flex flex-col items-center space-y-10">
         <img src={AdidasBanner} alt="adidas-Banner" />
-        <h1 className="font-body text-5xl text-center max-sm:hidden">
+        <h1 className="font-body text-5xl text-center max-sm:hidden pl-5 pr-5">
           Adidas Taps into the Crypto Craze with Innovative NFT Marketing
           Strategy
         </h1>

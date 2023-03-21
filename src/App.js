@@ -10,7 +10,7 @@
 // import TrustedPartners from "./components/TrustedPartners/TrustedPartners";
 // import Form from "./components/Form/Form";
 // import Footer from "./components/Footer/Footer";
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import AccountSetup from "./components/Pages/AccountSetup/AccountSetup";
 import AccountSetupStep2 from "./components/Pages/AccountSetup/AccountSetupStep2";
@@ -36,6 +36,7 @@ import AdidasArticle from "./components/Pages/Articles/AdidasArticle";
 import NikeArticle from "./components/Pages/Articles/NikeArticle";
 import OdysseyArticle from "./components/Pages/Articles/OdysseyArticle";
 import StreetArtArticle from "./components/Pages/Articles/StreetArtArticle";
+import SuccessRequest from "./components/Pages/SuccessRequest";
 
 function App() {
   // const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -55,36 +56,47 @@ function App() {
 
   // const navigate = useNavigate();
 
-
   return (
     <div className="App">
+      {/* <ScrollToTop /> */}
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="/casestudies" element={<CaseStudies/>} />
-        <Route path="/casestudydetail-cococola" element={<Articles/>} />
-        <Route path="/casestudydetail-pepsi" element={<PepsiArticle/>} />
-        <Route path="/casestudydetail-adidas" element={<AdidasArticle/>} />
-        <Route path="/casestudydetail-nike" element={<NikeArticle/>} />
-        <Route path="/casestudydetail-starbucks" element={<OdysseyArticle/>} />
-        <Route path="/casestudydetail-streetart" element={<StreetArtArticle/>} />
-        <Route path="/pricing" element={<Pricing/>} />
-        <Route path="/signup" element={<SignUp/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/accountsetup-step-1" element={<AccountSetup/>} />
-        <Route path="/accountsetup-step-2" element={<AccountSetupStep2/>} />
-        <Route path="/accountsetup-step-3" element={<AccountSetupStep3/>} />
-        <Route path="/workemail-verification" element={<WorkEmail/>} />
-        <Route path="/pending-verification" element={<PendingVerification/>} />
-        <Route path="/forgetpassword" element={<ForgotPassword/>} />
-        <Route path="/resetpassword" element={<ResetPassword/>} />
-        <Route path="/admin-dashboard" element={<AdminDashBoard/>} />
-        <Route path="/collection" element={<Collection/>} />
-        <Route path="/artwork" element={<ArtWork/>} />
-        <Route path="/integration" element={<Integration/>} />
-        <Route path="/settings" element={<Settings/>} />
-        <Route path="/targeting" element={<Targeting/>} />
-        <Route path="/requestbeta" element={<RequestBeta/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/casestudies" element={<CaseStudies />} />
+
+          <Route path="/casestudydetail-cococola" element={<Articles />} />
+          <Route path="/casestudydetail-pepsi" element={<PepsiArticle />} />
+          <Route path="/casestudydetail-adidas" element={<AdidasArticle />} />
+          <Route path="/casestudydetail-nike" element={<NikeArticle />} />
+          <Route
+            path="/casestudydetail-starbucks"
+            element={<OdysseyArticle />}
+          />
+          <Route
+            path="/casestudydetail-streetart"
+            element={<StreetArtArticle />}
+          />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/accountsetup-step-1" element={<AccountSetup />} />
+          <Route path="/accountsetup-step-2" element={<AccountSetupStep2 />} />
+          <Route path="/accountsetup-step-3" element={<AccountSetupStep3 />} />
+          <Route path="/workemail-verification" element={<WorkEmail />} />
+          <Route
+            path="/pending-verification"
+            element={<PendingVerification />}
+          />
+          <Route path="/forgetpassword" element={<ForgotPassword />} />
+          <Route path="/resetpassword" element={<ResetPassword />} />
+          <Route path="/admin-dashboard" element={<AdminDashBoard />} />
+          <Route path="/collection" element={<Collection />} />
+          <Route path="/artwork" element={<ArtWork />} />
+          <Route path="/integration" element={<Integration />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/targeting" element={<Targeting />} />
+          <Route path="/requestbeta" element={<RequestBeta />} />
+          <Route path="/successrequest" element={<SuccessRequest />} />
         </Routes>
       </BrowserRouter>
       {/* <NavBar />

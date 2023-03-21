@@ -1,14 +1,17 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Banner from "../../../images/ColaBanner.png";
 import {useNavigate} from "react-router-dom";
 
 const Article = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     const navigate = useNavigate();
   return (
     <div>
       <div className="flex flex-col items-center space-y-10">
         <img src={Banner} alt="Cola-Banner" />
-        <h1 className="font-body text-5xl text-center max-sm:hidden">
+        <h1 className="font-body text-5xl text-center max-sm:hidden pl-5 pr-5">
           From Bottles to Blockchain: Coca-Cola's NFT Marketing Experiment
         </h1>
 

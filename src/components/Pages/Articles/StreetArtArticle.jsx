@@ -3,15 +3,20 @@ import RedditBanner from "../../../images/RedditBanner.png";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
+import { useEffect } from "react";
 
 const StreetArtArticle = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div>
       <NavBar />
       <div className="flex flex-col items-center space-y-10">
         <img src={RedditBanner} alt="reddit-Banner" />
-        <h1 className="font-body text-5xl text-center max-sm:hidden">
+     
+        <h1 className="font-body text-5xl text-center max-sm:hidden pl-5 pr-5">
           From Memes to Digital Collectibles: How Reddit is Changing the Game
           with NFTs
         </h1>

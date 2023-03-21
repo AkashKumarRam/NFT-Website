@@ -1,17 +1,20 @@
-import React from "react";
+import React,{useEffect} from "react";
 import StarbucksBanner from "../../../images/StarbucksBanner.png";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 
 const OdysseyArticle = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <div>
       <NavBar />
       <div className="flex flex-col items-center space-y-10">
         <img src={StarbucksBanner} alt="starbucks-Banner" />
-        <h1 className="font-body text-5xl text-center max-sm:hidden">
+        <h1 className="font-body text-5xl text-center max-sm:hidden pl-5 pr-5">
           Brewing Up a New Marketing Strategy: Inside Starbucks' NFT Collection
         </h1>
 

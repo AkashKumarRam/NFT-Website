@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NikeBanner from "../../../images/NikeBanner.png";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
 
 const NikeArticle = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
   return (
     <div>
       <NavBar />
       <div className="flex flex-col items-center space-y-10">
         <img src={NikeBanner} alt="nike-Banner" />
-        <h1 className="font-body text-5xl text-center max-sm:hidden">
+        <h1 className="font-body text-5xl text-center max-sm:hidden pl-5 pr-5">
           Swooshing into the Future: How Nike is Incorporating NFTs into Their
           Marketing Strategy
         </h1>

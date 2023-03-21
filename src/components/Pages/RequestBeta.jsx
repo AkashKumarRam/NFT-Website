@@ -5,6 +5,7 @@ import LogoText from "../../images/LogoText.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Select from "react-select";
+import { redirect } from "react-router-dom";
 
 const options = [
   { value: "Blockchain/Web3", label: "Blockchain/Web3" },
@@ -120,7 +121,12 @@ const RequestBeta = () => {
       }
     );
 
-    console.log(response.data);
+    if (response.status === 201) {
+      navigate("/successrequest")
+    }
+
+
+
   };
 
   const navigate = useNavigate();
@@ -132,7 +138,7 @@ const RequestBeta = () => {
           <img src={Log} className="h-[18rem]" alt="blur circle" />
         </div>
       </div>
-      <div className="bg-white p-6 w-1/2 mt-8 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-full">
+      <div className="bg-white p-6 w-1/2  max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-full">
         <div className="flex flex-row items-center space-x-3 w-full max-sm:flex max-sm:flex-row max-sm:items-start max-sm:-ml-2">
           <img onClick={() => navigate("/")} src={LogoImage} alt="logo" />
           <img onClick={() => navigate("/")} src={LogoText} alt="logotext" />

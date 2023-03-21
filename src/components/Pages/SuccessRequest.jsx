@@ -2,7 +2,7 @@ import React from "react";
 import Log from "../../images/Login.png";
 import LogoImage from "../../images/LogoImage.png";
 import LogoText from "../../images/LogoText.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SuccessRequest = () => {
   const navigate = useNavigate();
@@ -44,6 +44,12 @@ const SuccessRequest = () => {
             Call US
           </button>
         </div>
+        <h3
+          onClick={() => navigate("/")}
+          className="font-poppins underline text-[#2F3FD4] cursor-pointer mt-6"
+        >
+          Back to Home
+        </h3>
       </div>
     </div>
     // </div> debapriyo@blexings.com

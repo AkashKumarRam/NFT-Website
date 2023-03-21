@@ -2,7 +2,7 @@ import React from "react";
 import Log from "../../images/Login.png";
 import LogoImage from "../../images/LogoImage.png";
 import LogoText from "../../images/LogoText.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SuccessRequest = () => {
   const navigate = useNavigate();
@@ -33,17 +33,20 @@ const SuccessRequest = () => {
           </p>
         </div>
         <div className="flex flex-row space-x-5 mt-5 ">
-          <button class="text-white font-poppins px-4 py-2 rounded mt-[1rem] w-[9rem] bg-[#2F3FD4]">
+          <button
+            onClick={() => window.location = 'mailto:debapriyo@blexings.com'}
+            class="text-white font-poppins px-4 py-2 rounded mt-[1rem] w-[9rem] bg-[#2F3FD4]"
+          >
             Email US
           </button>
 
-          <button class="text-white font-poppins px-4 py-2 rounded mt-[1rem] bg-[#2F3FD4] w-[9rem]">
+          <button onClick={() => window.location = 'tel:+918100224544'} class="text-white font-poppins px-4 py-2 rounded mt-[1rem] bg-[#2F3FD4] w-[9rem]">
             Call US
           </button>
         </div>
       </div>
     </div>
-    // </div>
+    // </div> debapriyo@blexings.com
   );
 };
 

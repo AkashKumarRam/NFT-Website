@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const PricingList = () => {
+  const navigate = useNavigate();
   return (
     <div className="mt-10">
       <div className="text-center space-y-6">
@@ -41,8 +43,8 @@ const PricingList = () => {
                 &#10003; Standard Collection Level Metadata
               </li>
             </ul>
-            <button className="font-inter font-bold border-2 text-center rounded-md h-12 border-stone-500 w-full">
-              Buy Plan
+            <button onClick={() => navigate("/requestbeta")} className="font-inter font-bold border-2 text-center rounded-md h-12 border-stone-500 w-full">
+              Contact Sales
             </button>
           </div>
         </div>
@@ -87,8 +89,8 @@ const PricingList = () => {
                 &#10003; Access IRL Airdrop Mobile App
               </li>
             </ul>
-            <button className="font-inter font-bold border-2 text-center rounded-md h-12 bg-[#F21C1C] text-white w-full">
-              Buy Plan
+            <button onClick={() => navigate("/requestbeta")} className="font-inter font-bold border-2 text-center rounded-md h-12 bg-[#F21C1C] text-white w-full">
+              Contact Sales
             </button>
           </div>
         </div>
@@ -141,7 +143,7 @@ const PricingList = () => {
                 &#10003; Additional Custom Metadata
               </li>
             </ul>
-            <button className="font-inter font-bold border-2 text-center rounded-md h-12 bg-[#141414] text-white w-full">
+            <button onClick={() => navigate("/requestbeta")} className="font-inter font-bold border-2 text-center rounded-md h-12 bg-[#141414] text-white w-full">
               Contact Sales
             </button>
           </div>

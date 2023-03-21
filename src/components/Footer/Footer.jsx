@@ -28,7 +28,7 @@ const Footer = () => {
         <h2 className="font-poppins text-lg font-bold">Get in touch</h2>
         <p className="font-poppins">contact@hexatick.com</p>
         <p className="font-poppins">
-          734 Broadway, Floor 5 <br /> New York, NY 10003
+        WeWork Koramangala <br /> 80 Feet Rd, 1A Block
         </p>
       </div>
 
@@ -43,8 +43,8 @@ const Footer = () => {
         <h2 className="font-poppins text-lg font-bold mb-4">Jump To</h2>
         <ul className="font-poppins cursor-pointer space-y-1">
           <li onClick={() => navigate('/')}>Home</li>
-          <li>UseCases</li>
-          <li>Pricing</li>
+          <li onClick={() => navigate('/casestudies')}>UseCases</li>
+          <li onClick={() => navigate('/pricing')}>Pricing</li>
           <li>About us</li>
           <li>Contact</li>
         </ul>

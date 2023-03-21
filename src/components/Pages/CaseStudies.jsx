@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import AdidasCaseStudy from './CaseStudies/AdidasCaseStudy';
@@ -9,6 +9,9 @@ import PepsiCaseStudy from './CaseStudies/PepsiCaseStudy';
 import StreetArtCaseStudy from './CaseStudies/StreetArtCaseStudy';
 
 const CaseStudies = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
         <NavBar/>

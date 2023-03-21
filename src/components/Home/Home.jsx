@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import BigBrands from "../BigBrands/BigBrands.jsx";
 import { useEffect, useState } from "react";
 import MainBanner from "../Details/MainBanner";
@@ -7,44 +7,47 @@ import Header from "../Header/Header";
 import KeyPoints from "../KeyPoints/KeyPoints";
 import BrandDetails from "../MakeYourBrand/BrandDetails";
 import NavBar from "../NavBar/NavBar";
-import Testimonial from "../Testimonials/Testimonial";
+// import Testimonial from "../Testimonials/Testimonial";
 import TrustedPartners from "../TrustedPartners/TrustedPartners";
 import Form from "../Form/Form";
 import Footer from "../Footer/Footer";
 // import FaqBox from "../Pages/PricingList/FaqBox";
-import HomeFaq from './HomeFaq.jsx';
+import HomeFaq from "./HomeFaq.jsx";
 
 const Home = () => {
-    const [isLargeScreen, setIsLargeScreen] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
-    useEffect(() => {
-      const handleResize = () => {
-        setIsLargeScreen(window.innerWidth >= "640px"); // Change breakpoint here
-      };
-  
-      handleResize();
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= "640px"); // Change breakpoint here
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div>
-    <NavBar />
+      <NavBar />
       <Header />
       <TrustedPartners />
       {isLargeScreen ? <MainBanner /> : <BigBrands />}
       {isLargeScreen ? <BigBrands /> : <MainBanner />}
-      <Features/>
-      <KeyPoints/>
+      <Features />
+      <KeyPoints />
       {/* <Testimonial/> */}
-      <BrandDetails/>
-      <Form/>
-      <HomeFaq/>
-      <Footer/>
+      <BrandDetails />
+      <Form />
+      <HomeFaq />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

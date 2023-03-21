@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Log from "../../images/Login.png";
 import LogoImage from "../../images/LogoImage.png";
 import LogoText from "../../images/LogoText.png";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import Select from "react-select";
 
 const options = [
@@ -42,7 +43,7 @@ const options2 = [
 const customStyles = {
   control: (provided) => ({
     ...provided,
-    width: "20rem",
+    width: "100%",
     height: "2.5rem",
     borderRadius: "6px",
     border: "1px solid black",
@@ -71,6 +72,57 @@ const customStyles = {
 };
 
 const RequestBeta = () => {
+  const [name, setName] = useState("");
+  const [bType, setBType] = useState("");
+  const [funding, setFunding] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleBType = (e) => {
+    console.log(e);
+    setBType(e.value);
+  };
+
+  const handleFunding = (e) => {
+    setFunding(e.value);
+  };
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleNumber = (e) => {
+    setNumber(e.target.value);
+  };
+
+  const handleSubmission = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      nameOfBusiness: name,
+      typeOfBusiness: bType,
+      funding: funding,
+      email: email,
+      phone: number,
+    };
+
+    const response = await axios.post(
+      "https://app.deedcrypto.com/api/addIntrests/",
+      data,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    console.log(response.data);
+  };
+
   const navigate = useNavigate();
   return (
     // <div className="h-[100vh] flex items-center justify-center bg-[#FFFAFA]">
@@ -92,27 +144,36 @@ const RequestBeta = () => {
           </p>
         </div>
         <div className="mt-5 flex flex-col space-y-4 ">
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
+          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5 w-[22rem]">
             <label className="text-black text-md font-poppins cursor-pointer">
               Name of the business
             </label>
             <input
               type="text"
-              className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
+              className="border-[1px] border-gray-900 rounded-md h-[2.5rem]  pl-2 max-sm:w-[20rem]"
+              onChange={handleName}
             />
           </div>
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5 max-sm:w-[20rem]">
+          <div className="flex flex-col max-sm:pl-5 w-[22rem] max-sm:w-[22.5rem] max-sm:pr-5">
             <label className="text-black text-md font-poppins cursor-pointer">
               Type of Business
             </label>
-            <Select options={options} styles={customStyles} />
+            <Select
+              options={options}
+              styles={customStyles}
+              onChange={handleBType}
+            />
           </div>
 
-          <div className="flex flex-col max-sm:pl-5 max-sm:pr-5">
+          <div className="flex flex-col max-sm:pl-5 w-[22rem] max-sm:w-[22.5rem] max-sm:pr-5">
             <label className="text-black text-md font-poppins cursor-pointer">
               Funding Status
             </label>
-            <Select options={options2} styles={customStyles} />
+            <Select
+              options={options2}
+              styles={customStyles}
+              onChange={handleFunding}
+            />
           </div>
           <div className="flex flex-col max-sm:pl-5 max-sm:pr-5 ">
             <label className="text-black text-md font-poppins cursor-pointer">
@@ -121,6 +182,7 @@ const RequestBeta = () => {
             <input
               type="email"
               className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
+              onChange={handleEmail}
             />
           </div>
 
@@ -131,11 +193,15 @@ const RequestBeta = () => {
             <input
               type="text"
               className="border-[1px] border-gray-900 rounded-md h-[2.5rem] w-[22rem] pl-2 max-sm:w-[20rem]"
+              onChange={handleNumber}
             />
           </div>
         </div>
 
-        <button className="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[20rem]">
+        <button
+          className="text-white font-bold px-4 py-2 rounded w-[22rem] mt-[1rem] bg-[#2F3FD4] max-sm:w-[20rem]"
+          onClick={handleSubmission}
+        >
           Request Beta
         </button>
       </div>

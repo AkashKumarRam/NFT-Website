@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../../images/ColaBanner.png";
+import PepsiBanner from "../../../images/PepsiBanner.png";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../../NavBar/NavBar";
 import Footer from "../../Footer/Footer";
@@ -8,15 +8,17 @@ const PepsiArticle = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <NavBar/>
+      <NavBar />
       <div className="flex flex-col items-center space-y-10">
-        <img src={Banner} alt="pepsi-Banner" />
+        <img src={PepsiBanner} alt="pepsi-Banner" />
         <h1 className="font-body text-5xl text-center max-sm:hidden">
-          From Bottles to Blockchain: Coca-Cola's NFT Marketing Experiment
+          NFTs and Pepsi: How Digital Collectibles Boosted Customer Engagement
+          and Sales
         </h1>
 
         <h1 className="font-body text-3xl pr-2 pl-2 text-center sm:hidden">
-          From Bottles to Blockchain: Coca-Cola's NFT Marketing Experiment
+          NFTs and Pepsi: How Digital Collectibles Boosted Customer Engagement
+          and Sales
         </h1>
       </div>
 
@@ -106,7 +108,7 @@ const PepsiArticle = () => {
           Read other case studies
         </h3>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

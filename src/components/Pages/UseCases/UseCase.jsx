@@ -1,8 +1,12 @@
 import React from "react";
 import Reddit from "../../../images/Group A-Image 1.png";
 import CocaCola from "../../../images/Group A-Image 3.png";
+import { useEffect } from "react";
 
 const UseCase = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center mt-[2rem] max-sm:text-center">
       <h1 className="text-4xl font-body">Potential Use-cases NFT Branding</h1>

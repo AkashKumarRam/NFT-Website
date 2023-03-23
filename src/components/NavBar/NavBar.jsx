@@ -23,7 +23,7 @@ const NavBar = () => {
         />
         <img
           onClick={() => navigate("/")}
-          className="mt-1 h-4"
+          className="mt-2 h-4"
           src={LogoText}
           alt="LogoText"
         />

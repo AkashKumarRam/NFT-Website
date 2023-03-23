@@ -26,7 +26,7 @@ const Footer = () => {
 
       <div className="space-y-4 mt-16 max-sm:text-center max-sm:mt-10">
         <h2 className="font-poppins text-lg font-bold">Get in touch</h2>
-        <p className="font-poppins">contact@hexatick.com</p>
+        <p className="font-poppins">contact@hexarare.com</p>
         <p className="font-poppins">
         WeWork Koramangala <br /> 80 Feet Rd, 1A Block
         </p>

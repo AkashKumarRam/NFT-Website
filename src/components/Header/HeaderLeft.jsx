@@ -19,7 +19,7 @@ const HeaderLeft = () => {
       <div className="max-sm:hidden">
         <p className="font-hero text-indigo-600 mt-4 text-lg sub-text max-sm:ml-11">
           Leverage NFTs to transform customer engagement and <br /> establish a
-          powerful community-driven brand presence with <br /> Hexatick's
+          powerful community-driven brand presence with <br /> Hexarare's
           comprehensive NFT management solution.
         </p>
       </div>

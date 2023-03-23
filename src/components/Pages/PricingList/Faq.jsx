@@ -10,14 +10,14 @@ const Faq = () => {
         <p className="font-inter">Reach out to our team at</p>
         <p className="font-inter underline underline-offset-4 max-sm:flex flex-col">
           {" "}
-          support@hexatick.com
+          support@hexarare.com
         </p>
       </div>
 
       {/* FAQ SECTION */}
       <div className="mt-14 flex flex-col items-center ">
         <FaqBox
-          question="What does your No-Code NFT API platform like Hexatick do?"
+          question="What does your No-Code NFT API platform like Hexarare do?"
           answer="Our platform allows you to easily create and manage your own NFTs without any coding experience. You can mint new tokens, manage ownership and transfer them securely on the blockchain with simple REST APIs that can be implemented with minimal development and knowledge."
         />
         <FaqBox
@@ -26,10 +26,10 @@ const Faq = () => {
         />
         <FaqBox
           question="How can I distribute NFT from my product?"
-          answer="Your brand's NFT are managed by Hexatick Cloud service thus can be managed with simple REST APIs. Brands can trigger Hexatick APIs from within your product according to their business logic."
+          answer="Your brand's NFT are managed by Hexarare Cloud service thus can be managed with simple REST APIs. Brands can trigger Hexarare APIs from within your product according to their business logic."
         />
         <FaqBox
-          question="What kind of APIs is provided Hexatick?"
+          question="What kind of APIs is provided Hexarare?"
           answer="The basic version of our platform offers three primary API use cases. The first use case is to enable the creation of a new Ethereum wallet for a user. The second use case allows a brand to initiate a new NFT collection. The third use case involves facilitating the distribution of NFTs to user addresses."
         />
         <FaqBox

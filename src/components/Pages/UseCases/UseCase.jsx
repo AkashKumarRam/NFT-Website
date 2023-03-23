@@ -14,8 +14,6 @@ import BettingProof from "../../../images/Group B- Image 6.png";
 import MusicIntellectualProperty from "../../../images/GroupB-Image8.png";
 import MovieIntellectualProperty from "../../../images/GroupB-Image7.png";
 
-
-
 import { useEffect } from "react";
 
 const UseCase = () => {
@@ -359,7 +357,18 @@ const UseCase = () => {
           <div className="flex flex-col items-center justify-center space-y-5 max-sm:mt-[1rem] max-sm:text-center">
             <h2 className="text-3xl font-body">Movie Intellectual Property</h2>
             <p className="text-md font-poppins max-sm:text-sm">
-            NFTs have the potential to revolutionize the movie industry by providing a new way for artists and platforms to monetize and protect their intellectual property. NFTs can be issued for movie IP, such as limited edition clips, posters, or even a unique version of a film, giving fans an exclusive digital asset to collect and trade.  Using blockchain technology,ensures that the movie IP remains secure and is not subject to piracy or copyright infringement. Furthermore, artists and platforms can receive a share of profits from subsequent sales or licensing of the NFTs, creating new revenue streams and increasing the overall value of the movie IP. Overall NFTs offer a powerful tool for artists and platforms in the movie industry.
+              NFTs have the potential to revolutionize the movie industry by
+              providing a new way for artists and platforms to monetize and
+              protect their intellectual property. NFTs can be issued for movie
+              IP, such as limited edition clips, posters, or even a unique
+              version of a film, giving fans an exclusive digital asset to
+              collect and trade. Using blockchain technology,ensures that the
+              movie IP remains secure and is not subject to piracy or copyright
+              infringement. Furthermore, artists and platforms can receive a
+              share of profits from subsequent sales or licensing of the NFTs,
+              creating new revenue streams and increasing the overall value of
+              the movie IP. Overall NFTs offer a powerful tool for artists and
+              platforms in the movie industry.
             </p>
           </div>
 

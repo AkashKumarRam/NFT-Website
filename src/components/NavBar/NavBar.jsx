@@ -5,7 +5,7 @@ import LogoText from "../../images/LogoText.png";
 // import ButtonB from "../../images/ButtonB.png";
 import "../NavBar/NavBar.css";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 // import {TfiMenu} from "react-icons/tfi";
 // import {RxCross2} from "react-icons/rx";
 import MobileMenu from "./MobileMenu";
@@ -29,8 +29,9 @@ const NavBar = () => {
         />
       </div>
 
-      <ul className="flex gap-5 cursor-pointer hidden sm:flex sm:flex-row sm:items-center sm:justify-between">
+      <ul className="flex gap-7 cursor-pointer hidden sm:flex sm:flex-row sm:items-center sm:justify-between">
         <li onClick={() => navigate('/casestudies')}>Case Studies</li>
+        <li onClick={() => navigate("/usecases")}>Use-Cases</li>
         {/* <li>API Documentation</li> */}
         <li onClick={() => navigate("/pricing")}>Pricing</li>
       </ul>

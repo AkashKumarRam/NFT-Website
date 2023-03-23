@@ -37,6 +37,7 @@ import NikeArticle from "./components/Pages/Articles/NikeArticle";
 import OdysseyArticle from "./components/Pages/Articles/OdysseyArticle";
 import StreetArtArticle from "./components/Pages/Articles/StreetArtArticle";
 import SuccessRequest from "./components/Pages/SuccessRequest";
+import UseCases from "./components/Pages/UseCases";
 
 function App() {
   // const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -76,6 +77,7 @@ function App() {
             path="/casestudydetail-streetart"
             element={<StreetArtArticle />}
           />
+          <Route path="/usecases" element={<UseCases />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
